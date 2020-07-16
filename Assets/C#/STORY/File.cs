@@ -3,20 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class File : MonoBehaviour
 {
-    public TextMeshProUGUI fieldText; //출력할 텍스트
+    public Text fieldText; //출력할 텍스트
     public TextAsset My_Text;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (My_Text != null)
+        if(Input.GetMouseButtonDown(0))
         {
-            string currentText = My_Text.text.Substring(0 - My_Text.text.Length - 1);
-            fieldText.text = currentText;
-            Debug.Log(currentText);
+            if (My_Text != null)
+            {
+                string currentText = My_Text.text.Substring(0 - My_Text.text.Length - 1);
+                fieldText.text = currentText;
+                Debug.Log(currentText);
+            }
         }
     }
 
