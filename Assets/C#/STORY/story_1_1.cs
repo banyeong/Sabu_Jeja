@@ -25,7 +25,9 @@ public class story_1_1 : MonoBehaviour //아무런 조건도 충족하지 못함
     [SerializeField] private Text txt_dialogue; //대화내용
     [SerializeField] private SpriteRenderer sprite_name; //누가 말하는지 표시
     [SerializeField] private SpriteRenderer sprite_background; //배경
-    
+
+    [SerializeField] private UnityEngine.UI.Button pgButton;
+
     private bool isDialogue = true;
     private int count = 0;
 
@@ -56,8 +58,8 @@ public class story_1_1 : MonoBehaviour //아무런 조건도 충족하지 못함
 
                 else
                 {
-                    //씬 전환 로그 넣어야 할 듯
-                }    
+                    
+                }
             }
         }
     }

@@ -9,11 +9,13 @@ public class story_1_2 : MonoBehaviour //아무런 조건도 충족하지 못함
 {
 #pragma warning disable 0649
 
-    [SerializeField] private SpriteRenderer sprite_Charcter;
-    [SerializeField] private SpriteRenderer sprite_dialogue;
-    [SerializeField] private TextMeshProUGUI txt_dialogue;
+    [SerializeField] private SpriteRenderer sprite_Charcter; //캐릭터
+    [SerializeField] private SpriteRenderer sprite_dialogue; //대화창
+    [SerializeField] private Text txt_dialogue; //대화내용
+    [SerializeField] private SpriteRenderer sprite_name; //누가 말하는지 표시
+    [SerializeField] private SpriteRenderer sprite_background; //배경
 
-    private bool isDialogue = false;
+    private bool isDialogue = true;
     private int count = 0;
 
     [SerializeField] private Dialogue[] dialogue;
@@ -24,6 +26,8 @@ public class story_1_2 : MonoBehaviour //아무런 조건도 충족하지 못함
 
         txt_dialogue.text = dialogue[count].dialogue;
         sprite_Charcter.sprite = dialogue[count].cg;
+        sprite_name.sprite = dialogue[count].nickname;
+        sprite_background.sprite = dialogue[count].bg;
         count++;
     }
 
