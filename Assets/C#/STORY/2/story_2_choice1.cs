@@ -17,7 +17,7 @@ public class story_2_choice1 : MonoBehaviour
     [SerializeField] private UnityEngine.UI.Button choice_1; // 선택지 버튼1
     [SerializeField] private UnityEngine.UI.Button choice_2; // 선택지 버튼2
 
-    private bool isDialogue = true;
+    private bool isShow = false;
     private int count = 0;
 
     [SerializeField] private Dialogue[] dialogue;
@@ -30,7 +30,7 @@ public class story_2_choice1 : MonoBehaviour
         sprite_name.gameObject.SetActive(true);
         txt_dialogue.gameObject.SetActive(true);
 
-        isDialogue = true;
+        isShow = true;
         count = 0;
 
         NextDialogue();
@@ -48,7 +48,7 @@ public class story_2_choice1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isDialogue == true)
+        if (isShow == true)
         {
             if (Input.GetMouseButtonDown(0))
                 {
