@@ -361,7 +361,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 44811463}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 171046343}
+        m_MethodName: ShowButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &44811463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,6 +520,8 @@ GameObject:
   - component: {fileID: 171046339}
   - component: {fileID: 171046338}
   - component: {fileID: 171046341}
+  - component: {fileID: 171046342}
+  - component: {fileID: 171046343}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -633,6 +646,113 @@ MonoBehaviour:
     nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
   - dialogue: "\uC0AC\uBD80 :(\uC65C \uC2AC\uD508 \uD45C\uC815\uC744 \uC9D3\uB294
       \uAC83\uC774\uC9C0? \uC5B4\uB5A4 \uB9D0\uC744 \uD574\uC918\uC57C\uD560\uAE4C?)"
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+--- !u!114 &171046342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171046337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5b71a5e3eee124fb52876b251f8101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite_Charcter: {fileID: 550390636}
+  sprite_dialogue: {fileID: 1228703614}
+  txt_dialogue: {fileID: 1010629950}
+  sprite_name: {fileID: 1863330990}
+  sprite_background: {fileID: 631892014}
+  choice_1: {fileID: 805036488}
+  choice_2: {fileID: 44811462}
+  dialogue:
+  - dialogue: "(\uB3C4\uB825\uC774 \uC57D\uD574\uC11C \uCE68\uC6B8\uD574 \uD558\uACE0
+      \uC788\uB294 \uAC83 \uAC19\uB2E4.)"
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+  - dialogue: "\uD760... \uADF8\uB807\uB2E4\uBA74 \uC774\uAC83\uC740 \uC5B4\uB5A0\uB290\uB0D0?
+      \uB0B4 \uD2B9\uBCC4\uD788 \uC900\uBE44\uD55C \uB3C4\uB825 \uC218\uB828\uC744
+      \uD558\uBA74 \uB108\uC758 \uC2E4\uB825\uB3C4 \uAE08\uBC29 \uC99D\uC9C4\uB420
+      \uAC83\uC774\uB2E4."
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+  - dialogue: "\uD2B9\uBCC4\uD788... \uB9D0\uC785\uB2C8\uAE4C?"
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
+  - dialogue: "\uC65C\uC778\uC9C0 '\uD2B9\uBCC4\uD788'\uC5D0 \uB208\uC744 \uBC18\uC9DD\uC778\uB2E4."
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 0}
+  - dialogue: "\uADF8\uB807\uB2E4. \uD558\uC9C0\uB9CC \uB108\uC758 \uB048\uAE30\uAC00
+      \uC911\uC694\uD558\uB2E4. \uC911\uAC04\uC5D0 \uADF8\uB9CC\uB454\uB2E4\uBA74
+      \uC624\uD788\uB824 \uC5ED\uD6A8\uACFC\uAC00 \uB0A0 \uC218 \uC788\uB2E4."
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+  - dialogue: "\uC774 \uC81C\uC790 \uC790\uC2E0\uC788\uC2B5\uB2C8\uB2E4!"
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
+--- !u!114 &171046343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171046337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b365bae1ab256469b907810105ec2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite_Charcter: {fileID: 550390636}
+  sprite_dialogue: {fileID: 1228703614}
+  txt_dialogue: {fileID: 1010629950}
+  sprite_name: {fileID: 1863330990}
+  sprite_background: {fileID: 631892014}
+  choice_1: {fileID: 805036488}
+  choice_2: {fileID: 44811462}
+  dialogue:
+  - dialogue: "... \uB0B4\uAC00 \uB9D0\uC774 \uC2EC\uD588\uB358 \uAC83 \uAC19\uAD6C\uB098.
+      \uC774 \uC810\uC5D0 \uB300\uD574\uC120 \uC0AC\uACFC\uD558\uC9C0."
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+  - dialogue: "\uC544\uB2D9\uB2C8\uB2E4! \uB2E4\uB9CC... \uC81C \uC2E4\uB825\uC774
+      \uC0AC\uBD80\uB2D8\uC758 \uAC00\uB984\uCE68\uC5D0 \uBABB \uB530\uB77C\uAC00\uACE0
+      \uC788\uB294 \uAC83 \uAC19\uC544 \uC870\uAE08 \uCE68\uC6B8\uD588\uC5C8\uB358
+      \uAC83\uC785\uB2C8\uB2E4."
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
+  - dialogue: "\uD760... \uADF8\uB7F0 \uB108\uB97C \uC704\uD574 \uC900\uBE44\uD574\uB454
+      \uAC83\uC774 \uC788\uB2E4."
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+  - dialogue: "\uBB34\uC5C7\uC785\uB2C8\uAE4C?"
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
+  - dialogue: "\uB0B4 \uD2B9\uBCC4\uD788 \uC900\uBE44\uD55C \uB3C4\uB825 \uC218\uB828\uC774\uB2E4.
+      \uB2E4\uB9CC \uC911\uAC04\uC5D0 \uADF8\uB9CC\uB454\uB2E4\uBA74 \uC5ED\uD6A8\uACFC\uAC00
+      \uB0A0 \uC218 \uC788\uB2E4\uB294 \uAC83\uC774 \uB2E8\uC810\uC774\uC9C0... \uADF8\uB807\uAE30
+      \uB54C\uBB38\uC5D0 \uACE0\uBBFC\uD558\uACE0 \uC788\uC5C8\uB2E4."
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+  - dialogue: "\uC774 \uC81C\uC790 \uC0AC\uBD80\uB2D8\uC774 \uC900\uBE44\uD574\uC8FC\uC2E0\uAC70\uB77C\uBA74
+      \uBB50\uB4E0\uC9C0 \uD574\uB0BC \uC790\uC2E0\uC774 \uC788\uC2B5\uB2C8\uB2E4!"
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
+    nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
+  - dialogue: "\uC88B\uC740 \uB9C8\uC74C\uAC00\uC9D0\uC774\uB2E4!"
     cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
     bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
     nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
@@ -961,7 +1081,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 805036489}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 171046342}
+        m_MethodName: ShowButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &805036489
 MonoBehaviour:
   m_ObjectHideFlags: 0
