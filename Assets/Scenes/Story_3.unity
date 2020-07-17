@@ -362,6 +362,7 @@ GameObject:
   - component: {fileID: 171046339}
   - component: {fileID: 171046338}
   - component: {fileID: 171046341}
+  - component: {fileID: 171046342}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -494,6 +495,47 @@ MonoBehaviour:
     cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
     bg: {fileID: 21300000, guid: 213229965d67121469be68eb34ea539c, type: 3}
     nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+--- !u!114 &171046342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171046337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3544518c2f002b64a99764f035bcf585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite_Charcter: {fileID: 550390636}
+  sprite_dialogue: {fileID: 1228703614}
+  txt_dialogue: {fileID: 1010629950}
+  sprite_name: {fileID: 1863330990}
+  sprite_background: {fileID: 631892014}
+  choice_1: {fileID: 805036488}
+  choice_2: {fileID: 44811462}
+  dialogue:
+  - dialogue: "...\uB9C8\uCE68 \uB098\uB3C4 \uB3C4\uB825\uC5D0 \uAD00\uB828\uB41C
+      \uCC45\uC744 \uCC3E\uACE0 \uC788\uC5C8\uB2E4.\n\uC548\uB0B4\uD574\uC900\uB2E4\uBA74
+      \r\uB354\uD560 \uB098\uC704 \uC5C6\uC9C0.\r"
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 213229965d67121469be68eb34ea539c, type: 3}
+    nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+  - dialogue: "\uB9C8\uCE68 \uC774 \uADFC\uCC98\uC5D0 \uB3C4\uB825 \uAD00\uB828 \uCC45\uC774
+      \uC788\uC2B5\uB2C8\uB2E4!"
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 213229965d67121469be68eb34ea539c, type: 3}
+    nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
+  - dialogue: "\uC798\uB418\uC5C8\uAD70! \uC774\uCC38\uC5D0 \uB108\uC758 \uB3C4\uB825\uC5D0
+      \uB300\uD55C \uC774\uD574\uB3C4\uB3C4 \uC54C\uACE0\uC2F6\uAD6C\uB098."
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 213229965d67121469be68eb34ea539c, type: 3}
+    nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+  - dialogue: "\uC774 \uC81C\uC790 \uC9C0\uAE08\uAE4C\uC9C0 \uAC08\uACE0 \uB2E6\uC558\uB358
+      \uC9C0\uC2DD\uC744 \uBCF4\uC5EC\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4!"
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 213229965d67121469be68eb34ea539c, type: 3}
+    nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
 --- !u!1 &525624377
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +861,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 171046342}
         m_MethodName: ShowButton
         m_Mode: 1
         m_Arguments:
@@ -1258,7 +1300,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.0000019073}
+  m_AnchoredPosition: {x: -14, y: -29.302}
   m_SizeDelta: {x: 462.03558, y: 115.39549}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337332116
@@ -1293,8 +1335,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB0B4\uAC00 \uB9D0\uC744 \uC798\uBABB\uD588\uB098\uBCF4\uB2E4. \uC0AC\uACFC\uB97C
-    \uD558\uC790."
+  m_Text: "\uADFC\uB825 \uAD00\uB828 \uCC45\uC744 \uCC3E\uACE0 \uC788\uC5C8\uB2E4."
 --- !u!222 &1337332117
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1620,8 +1661,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.3, y: -29.3}
-  m_SizeDelta: {x: 462.03558, y: 115.39549}
+  m_AnchoredPosition: {x: -19, y: -28.3}
+  m_SizeDelta: {x: 485.6701, y: 151.45653}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2000684490
 MonoBehaviour:
@@ -1649,13 +1690,14 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 50
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB3C4\uB825\uC774 \uC57D\uD558\uB2C8 \uC218\uB828\uC744 \uC2DC\uD0A4\uC790."
+  m_Text: "\uB9C8\uCE68 \uB098\uB3C4 \uB3C4\uB825 \uAD00\uB828 \uCC45\uC744 \uCC3E\uACE0
+    \uC788\uC5C8\uB2E4."
 --- !u!222 &2000684491
 CanvasRenderer:
   m_ObjectHideFlags: 0
