@@ -325,24 +325,24 @@ MonoBehaviour:
   - dialogue: "\uD5C8\uC5B5\u2026 \uD5C9\u2026 \uC774\uB807\uAC8C \uD558\uB294\uAC8C
       \uB9DE\uC2B5\uB2C8\uAE4C?"
     cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
-    bg: {fileID: 21300000, guid: 8e4507045de845845aaf28dd04a86309, type: 3}
+    bg: {fileID: 21300000, guid: 1cfd94fd45cb4b34aa3dabd4f432ee43, type: 3}
     nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
   - dialogue: "\uC790\uC138\uAC00 \uC548\uC88B\uAD6C\uB098! \uD5C8\uB9AC\uB97C \uD53C\uACE0
       \uBAB8\uAC00\uC9D0\uC744 \uBC14\uB974\uAC8C \uD558\uB3C4\uB85D. \uC606\uC9D1\r
       \uB9C8\uBC95\uC0AC\uB3C4 \uB9C8\uB825\uC744 \uB2E4\uB8F0\uB550 \uD5C8\uB9AC\uB97C
       \uD53C\uACE0 \uB2E4\uB2C8\uAC70\uB298!\r"
     cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
-    bg: {fileID: 21300000, guid: 8e4507045de845845aaf28dd04a86309, type: 3}
+    bg: {fileID: 21300000, guid: 1cfd94fd45cb4b34aa3dabd4f432ee43, type: 3}
     nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
   - dialogue: "\uC0AC\uBD80\uB2D8\u2026! \uC800\uD76C \uC606\uC9D1\uC5D0\uB294 \uB9C8\uBC95\uC0AC\uAC00
       \uC548\uC0B4\uC9C0 \uC54A\uC2B5\uB2C8\uAE4C...!"
     cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
-    bg: {fileID: 21300000, guid: 8e4507045de845845aaf28dd04a86309, type: 3}
+    bg: {fileID: 21300000, guid: 1cfd94fd45cb4b34aa3dabd4f432ee43, type: 3}
     nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
   - dialogue: "\uB9D0\uC774 \uB9CE\uAD6C\uB098. \uB208\uC744 \uAC10\uACE0 \uC9D1\uC911\uD558\uB3C4\uB85D!
       \uC8FC\uD654\uC785\uB9C8\uC5D0 \uBE60\uC9C0\uC9C0 \uC54A\uB3C4\uB85D \uC870\uC2EC\uD558\uB77C!"
     cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
-    bg: {fileID: 21300000, guid: 8e4507045de845845aaf28dd04a86309, type: 3}
+    bg: {fileID: 21300000, guid: 1cfd94fd45cb4b34aa3dabd4f432ee43, type: 3}
     nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
 --- !u!1 &550390634
 GameObject:
@@ -525,7 +525,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8e4507045de845845aaf28dd04a86309, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1cfd94fd45cb4b34aa3dabd4f432ee43, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
