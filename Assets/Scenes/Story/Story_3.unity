@@ -203,7 +203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 171046343}
         m_MethodName: ShowButton
         m_Mode: 1
         m_Arguments:
@@ -363,6 +363,7 @@ GameObject:
   - component: {fileID: 171046338}
   - component: {fileID: 171046341}
   - component: {fileID: 171046342}
+  - component: {fileID: 171046343}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -533,6 +534,51 @@ MonoBehaviour:
     nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
   - dialogue: "\uC774 \uC81C\uC790 \uC9C0\uAE08\uAE4C\uC9C0 \uAC08\uACE0 \uB2E6\uC558\uB358
       \uC9C0\uC2DD\uC744 \uBCF4\uC5EC\uB4DC\uB9AC\uACA0\uC2B5\uB2C8\uB2E4!"
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 213229965d67121469be68eb34ea539c, type: 3}
+    nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
+--- !u!114 &171046343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171046337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6643a5edd14396c409e283719a2e48cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite_Charcter: {fileID: 550390636}
+  sprite_dialogue: {fileID: 1228703614}
+  txt_dialogue: {fileID: 1010629950}
+  sprite_name: {fileID: 1863330990}
+  sprite_background: {fileID: 631892014}
+  choice_1: {fileID: 805036488}
+  choice_2: {fileID: 44811462}
+  dialogue:
+  - dialogue: "\uADFC\uB825\uC5D0 \uAD00\uB828\uB41C \uCC45\uC744 \uCC3E\uACE0 \uC788\uC5C8\uB2E4.
+      \uB108\uC758 \uC131\uC7A5\uC5D0 \uB3C4\uC6C0\uC774 \uB420\uAC70\uB2E4."
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 213229965d67121469be68eb34ea539c, type: 3}
+    nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+  - dialogue: "\uC800\uB3C4 \uADFC\uB825\uC5D0\uB294 \uC790\uC2E0\uAC10\uC774 \uC5C6\uC5C8\uB358
+      \uCC38\uC785\uB2C8\uB2E4."
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 213229965d67121469be68eb34ea539c, type: 3}
+    nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
+  - dialogue: "\uB2E4\uB9CC \uADFC\uB825 \uAD00\uB828\uCC45\uC740 \uC774\uCABD\uC5D0\uB294
+      \uC5C6\uC5C8\uC2B5\uB2C8\uB2E4.\n\uAC19\uC774 \uCC3E\uC544\uB4DC\uB9B4\uAE4C\uC694?"
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 213229965d67121469be68eb34ea539c, type: 3}
+    nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
+  - dialogue: "\uD760, \uADF8\uB7EC\uBA74 \uC88B\uC9C0. \uAC19\uC774 \uAC00\uC11C
+      \uB108\uC758 \uBD80\uC871\uD55C \uBD80\uBD84\uC744 \uC5B4\uB5BB\uAC8C \uCC44\uC6B8
+      \uC218 \uC788\uC744 \uAC83\uC778\uC9C0 \uC0B4\uD3B4\uBCF4\uC790\uAFB8\uB098."
+    cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
+    bg: {fileID: 21300000, guid: 213229965d67121469be68eb34ea539c, type: 3}
+    nickname: {fileID: 21300000, guid: e675e000b2ae99240bd0d5486ef8d3b9, type: 3}
+  - dialogue: "...! \uB124, \uC0AC\uBD80\uB2D8!"
     cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
     bg: {fileID: 21300000, guid: 213229965d67121469be68eb34ea539c, type: 3}
     nickname: {fileID: 21300000, guid: 41e63feeb016d5242b16d824b0f488d9, type: 3}
