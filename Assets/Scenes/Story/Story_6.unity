@@ -457,7 +457,7 @@ MonoBehaviour:
   choice_1: {fileID: 805036488}
   choice_2: {fileID: 44811462}
   dialogue:
-  - dialogue: "(\uC81C\uC790\uAC00 \uAE34\uC7A5\uB418\uC5B4 \uBCF4\uC778\uB2E4.)"
+  - dialogue: "\uC81C\uC790\uAC00 \uAE34\uC7A5\uB418\uC5B4 \uBCF4\uC778\uB2E4."
     cg: {fileID: 21300000, guid: 062b3d261e8b62541bea7466756caffb, type: 3}
     bg: {fileID: 21300000, guid: 714d4b686235f9d43b6e2106ae4cc25b, type: 3}
     nickname: {fileID: 0}
