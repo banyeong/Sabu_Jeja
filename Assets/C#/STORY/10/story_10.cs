@@ -1,24 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEditor;
 
-[System.Serializable]
-public class Dialogue //집어 넣을 대화와 캐릭터이미지, 나중에 배경도 선언 하면 배경 바뀌게도 할 수 있을 듯함.
+public class story_10 : MonoBehaviour
 {
-    [TextArea]
-    public string dialogue;
-    public Sprite cg;
-    public Sprite bg;
-    public Sprite nickname;
-}
-
-public class story_1_1 : MonoBehaviour //아무런 조건도 충족하지 못함
-{
-    #pragma warning disable 0649
+#pragma warning disable 0649
 
     [SerializeField] private SpriteRenderer sprite_Charcter; //캐릭터
     [SerializeField] private SpriteRenderer sprite_dialogue; //대화창
@@ -26,37 +15,50 @@ public class story_1_1 : MonoBehaviour //아무런 조건도 충족하지 못함
     [SerializeField] private SpriteRenderer sprite_name; //누가 말하는지 표시
     [SerializeField] private SpriteRenderer sprite_background; //배경
 
+    [SerializeField] private UnityEngine.UI.Button choice_1; // 선택지 버튼1
+    [SerializeField] private UnityEngine.UI.Button choice_2; // 선택지 버튼2
+
     private bool isDialogue = true;
     private int count = 0;
 
     [SerializeField] private Dialogue[] dialogue;
 
+    public void ShowButton() //선택지버튼과 제자 캐릭터만 보이게 하는 함수
+    {
+        choice_1.gameObject.SetActive(true);
+        choice_2.gameObject.SetActive(true);
+        sprite_dialogue.gameObject.SetActive(false);
+        sprite_name.gameObject.SetActive(false);
+        txt_dialogue.gameObject.SetActive(false);
+
+        isDialogue = false;
+    }
+
     public void NextDialogue() //대화활성화
     {
         StudentStat studentStat = new StudentStat();
 
-            txt_dialogue.text = dialogue[count].dialogue;
-            sprite_Charcter.sprite = dialogue[count].cg;
-            sprite_name.sprite = dialogue[count].nickname;
-            sprite_background.sprite = dialogue[count].bg;
-            count++;
+        txt_dialogue.text = dialogue[count].dialogue;
+        sprite_Charcter.sprite = dialogue[count].cg;
+        sprite_name.sprite = dialogue[count].nickname;
+        sprite_background.sprite = dialogue[count].bg;
+        count++;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isDialogue)
+        if (isDialogue == true)
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if(count < dialogue.Length)
+                if (count < dialogue.Length)
                 {
                     NextDialogue();
                 }
-
                 else
                 {
-                    
+                    ShowButton();
                 }
             }
         }
