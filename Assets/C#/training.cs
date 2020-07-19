@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class training : MonoBehaviour
 {
     public int weeks = 1; // 1주 2주 3주 4주...
-
+    
     #region training list
     public string MoClear = "도력 정제";
     public string MoDevelop = "도력 개발";
@@ -23,7 +24,7 @@ public class training : MonoBehaviour
     #endregion
 
     StudentStat stat = new StudentStat();
-
+    
     #region trainig
     public void MOCLEAR() // 도력정제
     {
@@ -149,4 +150,17 @@ public class training : MonoBehaviour
         stat.currentWealth -= 14;
     } 
     #endregion
+}
+
+public class Progress_Story : MonoBehaviour
+{
+    StudentStat stat = new StudentStat();
+
+    private void STORY1()
+    {
+        if ((stat.currentMslStr < 300) && (stat.currentMoralStr < 300) && (stat.currentWealth < 500) && (stat.cureentFavorability < 300))
+        {
+            SceneManager.LoadScene(2);
+        }
+    }
 }
