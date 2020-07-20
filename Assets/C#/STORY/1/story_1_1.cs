@@ -35,11 +35,12 @@ public class story_1_1 : MonoBehaviour //아무런 조건도 충족하지 못함
     {
         StudentStat studentStat = new StudentStat();
 
-            txt_dialogue.text = dialogue[count].dialogue;
-            sprite_Charcter.sprite = dialogue[count].cg;
-            sprite_name.sprite = dialogue[count].nickname;
-            sprite_background.sprite = dialogue[count].bg;
-            count++;
+        sprite_Charcter.gameObject.SetActive(true);
+        txt_dialogue.text = dialogue[count].dialogue;
+        sprite_Charcter.sprite = dialogue[count].cg;
+        sprite_name.sprite = dialogue[count].nickname;
+        sprite_background.sprite = dialogue[count].bg;
+        count++;
     }
 
     // Update is called once per frame
