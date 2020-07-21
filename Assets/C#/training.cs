@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class training : MonoBehaviour
 {
-    public int weeks = 1; // 1주 2주 3주 4주...
-    
+    StudentStat stat = new StudentStat();
+
     #region training list
     public string MoClear = "도력 정제";
     public string MoDevelop = "도력 개발";
@@ -23,38 +23,36 @@ public class training : MonoBehaviour
     public string drawing = "그림 그리기"; 
     #endregion
 
-    StudentStat stat = new StudentStat();
-    
     #region trainig
     public void MOCLEAR() // 도력정제
     {
-        weeks += 2;
+        stat.weeks += 2;
         
         stat.currentMslStr -= 7;
         stat.currentMoralStr += 14;
         stat.cureentFavorability += 7;
 
         
-        Debug.Log(weeks + "주째");
+        Debug.Log(stat.weeks + "주째");
         Debug.Log("근력 " + stat.currentMoralStr + ", 도력 " + stat.currentMoralStr + ", 호감도 " + stat.cureentFavorability);
         
     }
 
     public void MODEVELOP() // 도술개발
     {
-        weeks += 3;
+        stat.weeks += 3;
         
         stat.currentMslStr -= 14;
         stat.currentMoralStr += 42;
         stat.currentWealth -= 7;
 
-        Debug.Log(weeks + "주째");
+        Debug.Log(stat.weeks + "주째");
         Debug.Log("근력 " + stat.currentMoralStr + ", 도력 " + stat.currentMoralStr + ", 재력 " + stat.currentWealth);
     }
 
     public void MOPRACTICE() // 도술연마
     {
-        weeks += 4;
+        stat.weeks += 4;
 
         stat.currentMslStr += 7;
         stat.currentMoralStr += 35;
@@ -63,7 +61,7 @@ public class training : MonoBehaviour
 
     public void MOCYCLE() // 운기조식
     {
-        weeks += 1;
+        stat.weeks += 1;
 
         stat.currentMoralStr += 14;
         stat.cureentFavorability -= 7;
@@ -71,7 +69,7 @@ public class training : MonoBehaviour
 
     public void PHYPRACTICE() // 체술단련
     {
-        weeks += 2;
+        stat.weeks += 2;
 
         stat.currentMslStr += 14;
         stat.currentMoralStr -= 7;
@@ -80,7 +78,7 @@ public class training : MonoBehaviour
 
     public void SWORDSMS() // 검술단련
     {
-        weeks += 3;
+        stat.weeks += 3;
 
         stat.currentMslStr += 42;
         stat.currentMoralStr -= 14;
@@ -89,7 +87,7 @@ public class training : MonoBehaviour
 
     public void SPEARSMS() // 창술단련
     {
-        weeks += 4;
+        stat.weeks += 4;
 
         stat.currentMslStr += 35;
         stat.currentMoralStr += 7;
@@ -99,7 +97,7 @@ public class training : MonoBehaviour
 
     public void BONGMS() // 봉술단련
     {
-        weeks += 1;
+        stat.weeks += 1;
 
         stat.currentMslStr += 14;
         stat.cureentFavorability -= 7;
@@ -107,7 +105,7 @@ public class training : MonoBehaviour
 
     public void CALCSTUDY() //상술공부
     {
-        weeks += 4;
+        stat.weeks += 4;
 
         stat.currentMoralStr -= 7;
         stat.currentWealth += 35;
@@ -115,7 +113,7 @@ public class training : MonoBehaviour
 
     public void BOOKREAD() //도서읽기
     {
-        weeks += 4;
+        stat.weeks += 4;
 
         stat.currentMslStr -= 7;
         stat.currentWealth += 35;
@@ -123,7 +121,7 @@ public class training : MonoBehaviour
 
     public void INSTRUMENT() //악기연주
     {
-        weeks += 2;
+        stat.weeks += 2;
 
         stat.currentMslStr -= 7;
         stat.currentMoralStr += 7;
@@ -132,7 +130,7 @@ public class training : MonoBehaviour
 
     public void POEMWRITE() //시쓰기
     {
-        weeks += 1;
+        stat.weeks += 1;
 
         stat.currentMslStr += 7;
         stat.currentMoralStr += 7;
@@ -142,25 +140,78 @@ public class training : MonoBehaviour
 
     public void DRAWING() //그림그리기
     {
-        weeks += 3;
+        stat.weeks += 3;
 
         stat.currentMslStr += 7;
         stat.currentMoralStr += 7;
         stat.cureentFavorability += 21;
         stat.currentWealth -= 14;
-    } 
+    }
     #endregion
+
+    public void WEEKS()
+    {
+            if (stat.weeks >= 12)
+            {
+                STORY();
+            }
+    }
+    public void STORY()
+    {
+        if ((stat.currentMslStr < 300) && (stat.currentMoralStr < 300) && (stat.currentWealth < 500) && (stat.cureentFavorability < 300)) //스토리1
+        {
+            SceneManager.LoadScene(2);
+        }
+        if (stat.currentMslStr >= 300) //스토리2
+        {
+            SceneManager.LoadScene(3);
+        }
+        if (stat.currentMoralStr >= 300) //스토리3
+        {
+            SceneManager.LoadScene(4);
+        }
+        if (stat.currentWealth >= 500) //스토리4
+        {
+            SceneManager.LoadScene(5);
+        }
+        if (stat.cureentFavorability >= 300) //스토리5
+        {
+            SceneManager.LoadScene(6);
+        }
+        if ((stat.currentMslStr >= 500) && (stat.currentMoralStr >= 500)) //스토리6
+        {
+            SceneManager.LoadScene(7);
+        }
+        if ((stat.currentMslStr >= 500) && (stat.currentWealth >= 500)) //스토리7
+        {
+            SceneManager.LoadScene(8);
+        }
+        if ((stat.currentMslStr >= 500) && (stat.currentMoralStr >= 300) && (stat.cureentFavorability >= 500)) //스토리8
+        {
+            SceneManager.LoadScene(9);
+        }
+        if ((stat.currentMoralStr >= 500) && (stat.currentWealth >= 500) && (stat.cureentFavorability >= 500)) //스토리9
+        {
+            SceneManager.LoadScene(10);
+        }
+        if ((stat.currentMslStr >= 800) && (stat.currentMoralStr >= 500) && (stat.cureentFavorability >= 500)) //스토리10
+        {
+            SceneManager.LoadScene(11);
+        }
+        if ((stat.currentMslStr >= 500) && (stat.currentMoralStr >= 800) && (stat.cureentFavorability >= 500)) //스토리11
+        {
+            SceneManager.LoadScene(12);
+        }
+        if ((stat.currentMslStr >= 800) && (stat.currentMoralStr >= 800) && (stat.cureentFavorability >= 500)) //스토리12
+        {
+            SceneManager.LoadScene(13);
+        }
+    }
 }
 
 public class Progress_Story : MonoBehaviour
 {
     StudentStat stat = new StudentStat();
 
-    private void STORY1()
-    {
-        if ((stat.currentMslStr < 300) && (stat.currentMoralStr < 300) && (stat.currentWealth < 500) && (stat.cureentFavorability < 300))
-        {
-            SceneManager.LoadScene(2);
-        }
-    }
+
 }
