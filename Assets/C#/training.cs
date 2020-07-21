@@ -2,6 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Runtime.InteropServices.ComTypes;
+using System.Runtime.CompilerServices;
+
+public class Story
+{
+    public int index; //로드할때 쓸 인덱스
+    public StudentStat goalStat; //목표 점수 
+    public int priority; //우선 순위(스토리 점수)
+}
 
 public class training : MonoBehaviour
 {
@@ -20,28 +29,45 @@ public class training : MonoBehaviour
     public string BookRead = "도서 읽기";
     public string Instrument = "악기 연주";
     public string PoemWrite = "시 쓰기";
-    public string drawing = "그림 그리기"; 
+    public string drawing = "그림 그리기";
     #endregion
+
+    //모든 스토리 ( index, stat{ 0, 0, 0, 0 }, priority )
+    private Story[] storys =
+                            {
+                            new Story() { index = 2, goalStat = new StudentStat(){currentMslStr = -1, currentMoralStr = -1, currentWealth = -1, cureentFavorability = -1}, priority = 0 }, //1
+                            new Story() { index = 3, goalStat = new StudentStat(){currentMslStr = 300, currentMoralStr = -1, currentWealth = -1, cureentFavorability = -1}, priority = 20 }, //2
+                            new Story() { index = 4, goalStat = new StudentStat(){currentMslStr = -1, currentMoralStr = 300, currentWealth = -1, cureentFavorability = -1}, priority = 30 }, //3
+                            new Story() { index = 5, goalStat = new StudentStat(){currentMslStr = -1, currentMoralStr = -1, currentWealth = 500, cureentFavorability = -1}, priority = 40 }, //4
+                            new Story() { index = 6, goalStat = new StudentStat(){currentMslStr = -1, currentMoralStr = -1, currentWealth = -1, cureentFavorability = 300}, priority = 60 }, //5
+                            new Story() { index = 7, goalStat = new StudentStat(){currentMslStr = 500, currentMoralStr = 500, currentWealth = -1, cureentFavorability = -1}, priority = 70 }, //6
+                            new Story() { index = 8, goalStat = new StudentStat(){currentMslStr = 500, currentMoralStr = -1, currentWealth = 500, cureentFavorability = -1}, priority = 80 }, //7
+                            new Story() { index = 9, goalStat = new StudentStat(){currentMslStr = 500, currentMoralStr = 300, currentWealth = -1, cureentFavorability = 500}, priority = 90 }, //8
+                            new Story() { index = 10, goalStat = new StudentStat(){currentMslStr = -1, currentMoralStr = 500, currentWealth = 500, cureentFavorability = 500}, priority = 110 }, //9
+                            new Story() { index = 11, goalStat = new StudentStat(){currentMslStr = 800, currentMoralStr = 500, currentWealth = -1, cureentFavorability = 500}, priority = 150 }, //10
+                            new Story() { index = 12, goalStat = new StudentStat(){currentMslStr = 500, currentMoralStr = 800, currentWealth = -1, cureentFavorability = 500}, priority = 170 }, //11
+                            new Story() { index = 0, goalStat = new StudentStat(){currentMslStr = 800, currentMoralStr = 800, currentWealth = -1, cureentFavorability = 500}, priority = 200 }, //12
+                            };
 
     #region trainig
     public void MOCLEAR() // 도력정제
     {
         stat.weeks += 2;
-        
+
         stat.currentMslStr -= 7;
         stat.currentMoralStr += 14;
         stat.cureentFavorability += 7;
 
-        
+
         Debug.Log(stat.weeks + "주째");
         Debug.Log("근력 " + stat.currentMoralStr + ", 도력 " + stat.currentMoralStr + ", 호감도 " + stat.cureentFavorability);
-        
+
     }
 
     public void MODEVELOP() // 도술개발
     {
         stat.weeks += 3;
-        
+
         stat.currentMslStr -= 14;
         stat.currentMoralStr += 42;
         stat.currentWealth -= 7;
@@ -149,69 +175,32 @@ public class training : MonoBehaviour
     }
     #endregion
 
-    public void WEEKS()
+
+
+    public void StoryProgress()
     {
-            if (stat.weeks >= 12)
+        Story curStory = null; //로드할 스토리
+
+        foreach (Story story in storys) //foreach 반복문
+        {
+            if (story.goalStat.currentMslStr <= stat.currentMslStr && story.goalStat.currentMoralStr <= stat.currentMoralStr
+                && story.goalStat.currentWealth <= stat.currentWealth && story.goalStat.cureentFavorability <= stat.cureentFavorability) //모든 조건 검사
             {
-                STORY();
+                if (curStory != null) //만약 조건에 부합하는 스토리가 이미 존재했을경우
+                {
+                    //우선순위를 비교하고 curStory에 넣어준다.
+                    curStory = story.priority < curStory.priority ? curStory : story;
+                }
+                else //만약 조건에 부합하는 스토리가 최초일경우
+                {
+                    //curStory에 넣어준다.
+                    curStory = story;
+                }
             }
-    }
-    public void STORY()
-    {
-        if ((stat.currentMslStr < 300) && (stat.currentMoralStr < 300) && (stat.currentWealth < 500) && (stat.cureentFavorability < 300)) //스토리1
-        {
-            SceneManager.LoadScene(2);
         }
-        if (stat.currentMslStr >= 300) //스토리2
-        {
-            SceneManager.LoadScene(3);
-        }
-        if (stat.currentMoralStr >= 300) //스토리3
-        {
-            SceneManager.LoadScene(4);
-        }
-        if (stat.currentWealth >= 500) //스토리4
-        {
-            SceneManager.LoadScene(5);
-        }
-        if (stat.cureentFavorability >= 300) //스토리5
-        {
-            SceneManager.LoadScene(6);
-        }
-        if ((stat.currentMslStr >= 500) && (stat.currentMoralStr >= 500)) //스토리6
-        {
-            SceneManager.LoadScene(7);
-        }
-        if ((stat.currentMslStr >= 500) && (stat.currentWealth >= 500)) //스토리7
-        {
-            SceneManager.LoadScene(8);
-        }
-        if ((stat.currentMslStr >= 500) && (stat.currentMoralStr >= 300) && (stat.cureentFavorability >= 500)) //스토리8
-        {
-            SceneManager.LoadScene(9);
-        }
-        if ((stat.currentMoralStr >= 500) && (stat.currentWealth >= 500) && (stat.cureentFavorability >= 500)) //스토리9
-        {
-            SceneManager.LoadScene(10);
-        }
-        if ((stat.currentMslStr >= 800) && (stat.currentMoralStr >= 500) && (stat.cureentFavorability >= 500)) //스토리10
-        {
-            SceneManager.LoadScene(11);
-        }
-        if ((stat.currentMslStr >= 500) && (stat.currentMoralStr >= 800) && (stat.cureentFavorability >= 500)) //스토리11
-        {
-            SceneManager.LoadScene(12);
-        }
-        if ((stat.currentMslStr >= 800) && (stat.currentMoralStr >= 800) && (stat.cureentFavorability >= 500)) //스토리12
-        {
-            SceneManager.LoadScene(13);
-        }
-    }
-}
 
-public class Progress_Story : MonoBehaviour
-{
-    StudentStat stat = new StudentStat();
-
+        //curStory의 index로 Scene을 Load한다.
+        SceneManager.LoadScene(curStory.index);
+    }
 
 }
