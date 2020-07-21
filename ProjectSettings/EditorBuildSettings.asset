@@ -14,4 +14,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story/Story_1.unity
     guid: 8d331f7dd6cdd844a8457ec7da96859f
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_2-1.unity
+    guid: 80bfc387461293a449c28e25c0e9612e
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_3.unity
+    guid: 1a41ab219bd59f545ad0090d3db9c04e
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_4.unity
+    guid: 560d85b11d6eefc408274d6a457c9aa9
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_5.unity
+    guid: 22eb3166e98e37a4c9cca5c7e05155c9
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_6.unity
+    guid: b8e9023b11cfaa940a9ef4531ee953d1
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_7.unity
+    guid: 90f3fb259a6dee14289a455a3d73f6fd
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_8.unity
+    guid: ec4b86102b0e0594e9808610a61f10ae
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_9.unity
+    guid: 07099f09c07dc6a48b33afb88edf5fad
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_10.unity
+    guid: 4cc6e88d125ce9c438b004c2904ede9a
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_11.unity
+    guid: 1a8b4536fa53b7141a3bfc75c8c4f7b7
+  - enabled: 1
+    path: Assets/Scenes/Training.unity
+    guid: cd2e54f07eac6414b91995c954f4b8b8
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: b2704ff0d1e2aff4a960462d6a337345
   m_configObjects: {}
