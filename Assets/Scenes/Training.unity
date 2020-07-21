@@ -172,7 +172,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -329,7 +328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -486,7 +484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -643,7 +640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -882,7 +878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -941,6 +936,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1594295945}
         m_MethodName: BONGMS
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 445004167}
+        m_MethodName: WEEKS
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1039,7 +1045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -1376,7 +1381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -1441,7 +1445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -1598,7 +1601,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -1821,7 +1823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -1978,7 +1979,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -2128,7 +2128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -2189,7 +2188,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -2293,7 +2291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -2450,7 +2447,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
@@ -2607,7 +2603,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weeks: 1
   MoClear: "\uB3C4\uB825 \uC815\uC81C"
   MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
   MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
