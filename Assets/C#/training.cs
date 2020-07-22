@@ -183,8 +183,8 @@ public class training : MonoBehaviour
 
         foreach (Story story in storys) //foreach 반복문
         {
-            if (story.goalStat.currentMslStr <= stat.currentMslStr && story.goalStat.currentMoralStr <= stat.currentMoralStr
-                && story.goalStat.currentWealth <= stat.currentWealth && story.goalStat.cureentFavorability <= stat.cureentFavorability) //모든 조건 검사
+            if (story.goalStat.currentMslStr < stat.currentMslStr && story.goalStat.currentMoralStr < stat.currentMoralStr
+                && story.goalStat.currentWealth < stat.currentWealth && story.goalStat.cureentFavorability < stat.cureentFavorability) //모든 조건 검사
             {
                 if (curStory != null) //만약 조건에 부합하는 스토리가 이미 존재했을경우
                 {

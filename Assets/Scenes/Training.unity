@@ -2211,6 +2211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1703867460}
+  - component: {fileID: 1703867461}
   m_Layer: 5
   m_Name: Red BTN
   m_TagString: Untagged
@@ -2241,6 +2242,31 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1703867461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703867459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bdeae940834f1f4dac3e365a2634208, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoClear: "\uB3C4\uB825 \uC815\uC81C"
+  MoDevelop: "\uB3C4\uB825 \uAC1C\uBC1C"
+  MoPractice: "\uB3C4\uC220 \uC5F0\uB9C8"
+  MoCycle: "\uC6B4\uAE30\uC870\uC2DD"
+  PhyPractice: "\uCCB4\uC220 \uB2E8\uB828"
+  SwordsMS: "\uAC80\uC220 \uB2E8\uB828"
+  SpearsMS: "\uCC3D\uC220 \uB2E8\uB828"
+  BongMS: "\uBD09\uC220 \uB2E8\uB828"
+  CalcStudy: "\uC0C1\uC220 \uACF5\uBD80"
+  BookRead: "\uB3C4\uC11C \uC77D\uAE30"
+  Instrument: "\uC545\uAE30 \uC5F0\uC8FC"
+  PoemWrite: "\uC2DC \uC4F0\uAE30"
+  drawing: "\uADF8\uB9BC \uADF8\uB9AC\uAE30"
 --- !u!1 &1728372837
 GameObject:
   m_ObjectHideFlags: 0
