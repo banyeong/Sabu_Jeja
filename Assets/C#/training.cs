@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Runtime.InteropServices.ComTypes;
-using System.Runtime.CompilerServices;
 
 public class Story
 {
@@ -58,9 +56,8 @@ public class training : MonoBehaviour
         stat.currentMoralStr += 14;
         stat.cureentFavorability += 7;
 
-
         Debug.Log(stat.weeks + "주째");
-        Debug.Log("근력 " + stat.currentMoralStr + ", 도력 " + stat.currentMoralStr + ", 호감도 " + stat.cureentFavorability);
+        Debug.Log("근력 " + stat.currentMoralStr + ", 도력 " + stat.currentMoralStr + ", 호감도 " + stat.cureentFavorability + ", 재력" + stat.currentWealth);
 
     }
 
@@ -133,6 +130,7 @@ public class training : MonoBehaviour
     {
         stat.weeks += 4;
 
+
         stat.currentMoralStr -= 7;
         stat.currentWealth += 35;
     }
@@ -175,8 +173,6 @@ public class training : MonoBehaviour
     }
     #endregion
 
-
-
     public void StoryProgress()
     {
         Story curStory = null; //로드할 스토리
@@ -202,5 +198,4 @@ public class training : MonoBehaviour
         //curStory의 index로 Scene을 Load한다.
         SceneManager.LoadScene(curStory.index);
     }
-
 }

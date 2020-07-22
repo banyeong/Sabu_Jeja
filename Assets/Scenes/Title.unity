@@ -662,7 +662,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1666219943}
-        m_MethodName: OnBtnClick
+        m_MethodName: LoadMain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -719,10 +719,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1666219938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 609817ec0fcfa7c4d857a7516e9c2a1d, type: 3}
+  m_Script: {fileID: 11500000, guid: ea1c8eea0a8825d4b919c784443ed1e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentType: 0
 --- !u!1 &1960084263
 GameObject:
   m_ObjectHideFlags: 0

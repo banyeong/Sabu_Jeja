@@ -22,6 +22,9 @@ public class Lake : MonoBehaviour
 
     public void NextDialogue() //대화활성화
     {
+        StudentStat stat = new StudentStat();
+        stat.cureentFavorability += 14;
+
         txt_dialogue.text = dialogue[count].dialogue;
         sprite_Charcter.sprite = dialogue[count].cg;
         sprite_name.sprite = dialogue[count].nickname;
