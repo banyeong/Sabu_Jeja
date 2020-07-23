@@ -23,8 +23,8 @@ public class Mountain2 : MonoBehaviour
     public void NextDialogue() //대화활성화
     {
         StudentStat stat = new StudentStat();
-        stat.currentMslStr += 7;
-        stat.cureentFavorability += 7;
+        stat._currentMslStr += 7;
+        stat._cureentFavorability += 7;
 
         sprite_Charcter.gameObject.SetActive(true);
         sprite_name.gameObject.SetActive(true);

@@ -23,8 +23,8 @@ public class Lake3 : MonoBehaviour
     public void NextDialogue() //대화활성화
     {
         StudentStat stat = new StudentStat();
-        stat.currentMslStr += 7;
-        stat.currentMoralStr += 7;
+        stat._currentMslStr += 7;
+        stat._currentMoralStr += 7;
 
         txt_dialogue.text = dialogue[count].dialogue;
         sprite_Charcter.sprite = dialogue[count].cg;
