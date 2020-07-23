@@ -53,12 +53,12 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 2;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMslStr -= 7;
-        GameManager.Instance.stat._currentMoralStr += 14;
-        GameManager.Instance.stat._cureentFavorability += 7;
+        GameManager.Instance.stat.CurrentMslStr -= 7;
+        GameManager.Instance.stat.CurrentMoralStr += 14;
+        GameManager.Instance.stat.CurrentFavorability += 7;
 
         Debug.Log(GameManager.Instance.stat.currentweeks + "주째");
-        Debug.Log("근력 " + GameManager.Instance.stat._currentMoralStr + ", 도력 " + GameManager.Instance.stat._currentMoralStr + ", 호감도 " + GameManager.Instance.stat._cureentFavorability + ", 재력" + GameManager.Instance.stat._currentWealth);
+        Debug.Log("근력 " + GameManager.Instance.stat.CurrentMslStr + ", 도력 " + GameManager.Instance.stat.CurrentMoralStr + ", 호감도 " + GameManager.Instance.stat.CurrentFavorability + ", 재력" + GameManager.Instance.stat.CurrentWealth);
 
     }
 
@@ -67,12 +67,12 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 3;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMslStr -= 14;
-        GameManager.Instance.stat._currentMoralStr += 42;
-        GameManager.Instance.stat._currentWealth -= 7;
+        GameManager.Instance.stat.CurrentMslStr -= 14;
+        GameManager.Instance.stat.CurrentMoralStr += 42;
+        GameManager.Instance.stat.CurrentWealth -= 7;
 
         Debug.Log(GameManager.Instance.stat.currentweeks + "주째");
-        Debug.Log("근력 " + GameManager.Instance.stat._currentMoralStr + ", 도력 " + GameManager.Instance.stat._currentMoralStr + ", 재력 " + GameManager.Instance.stat._currentWealth);
+        Debug.Log("근력 " + GameManager.Instance.stat.CurrentMslStr + ", 도력 " + GameManager.Instance.stat.CurrentMoralStr + ", 재력 " + GameManager.Instance.stat.CurrentWealth);
     }
 
     public void MOPRACTICE() // 도술연마
@@ -80,9 +80,9 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 4;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMslStr += 7;
-        GameManager.Instance.stat._currentMoralStr += 35;
-        GameManager.Instance.stat._currentWealth -= 14;
+        GameManager.Instance.stat.CurrentMslStr += 7;
+        GameManager.Instance.stat.CurrentMoralStr += 35;
+        GameManager.Instance.stat.CurrentWealth -= 14;
     }
 
     public void MOCYCLE() // 운기조식
@@ -90,8 +90,8 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 1;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMoralStr += 14;
-        GameManager.Instance.stat._cureentFavorability -= 7;
+        GameManager.Instance.stat.CurrentMoralStr += 14;
+        GameManager.Instance.stat.CurrentFavorability -= 7;
     }
 
     public void PHYPRACTICE() // 체술단련
@@ -99,9 +99,9 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 2;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMslStr += 14;
-        GameManager.Instance.stat._currentMoralStr -= 7;
-        GameManager.Instance.stat._cureentFavorability += 7;
+        GameManager.Instance.stat.CurrentMslStr += 14;
+        GameManager.Instance.stat.CurrentMoralStr -= 7;
+        GameManager.Instance.stat.CurrentFavorability += 7;
     }
 
     public void SWORDSMS() // 검술단련
@@ -109,9 +109,9 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 3;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMslStr += 42;
-        GameManager.Instance.stat._currentMoralStr -= 14;
-        GameManager.Instance.stat._currentWealth -= 7;
+        GameManager.Instance.stat.CurrentMslStr += 42;
+        GameManager.Instance.stat.CurrentMoralStr -= 14;
+        GameManager.Instance.stat.CurrentWealth -= 7;
     }
 
     public void SPEARSMS() // 창술단련
@@ -119,9 +119,9 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 4;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMslStr += 35;
-        GameManager.Instance.stat._currentMoralStr += 7;
-        GameManager.Instance.stat._currentWealth -= 14;
+        GameManager.Instance.stat.CurrentMslStr += 35;
+        GameManager.Instance.stat.CurrentMoralStr += 7;
+        GameManager.Instance.stat.CurrentWealth -= 14;
     }
 
 
@@ -130,8 +130,8 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 1;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMslStr += 14;
-        GameManager.Instance.stat._cureentFavorability -= 7;
+        GameManager.Instance.stat.CurrentMslStr += 14;
+        GameManager.Instance.stat.CurrentFavorability -= 7;
     }
 
     public void CALCSTUDY() //상술공부
@@ -139,8 +139,8 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 4;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMoralStr -= 7;
-        GameManager.Instance.stat._currentWealth += 35;
+        GameManager.Instance.stat.CurrentMoralStr -= 7;
+        GameManager.Instance.stat.CurrentWealth += 35;
     }
 
     public void BOOKREAD() //도서읽기
@@ -148,8 +148,8 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 4;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMslStr -= 7;
-        GameManager.Instance.stat._currentWealth += 35;
+        GameManager.Instance.stat.CurrentMslStr -= 7;
+        GameManager.Instance.stat.CurrentWealth += 35;
     }
 
     public void INSTRUMENT() //악기연주
@@ -157,9 +157,9 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 2;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMslStr -= 7;
-        GameManager.Instance.stat._currentMoralStr += 7;
-        GameManager.Instance.stat._cureentFavorability += 14;
+        GameManager.Instance.stat.CurrentMslStr -= 7;
+        GameManager.Instance.stat.CurrentMoralStr += 7;
+        GameManager.Instance.stat.CurrentFavorability += 14;
     }
 
     public void POEMWRITE() //시쓰기
@@ -167,10 +167,10 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 1;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMslStr += 7;
-        GameManager.Instance.stat._currentMoralStr += 7;
-        GameManager.Instance.stat._cureentFavorability -= 14;
-        GameManager.Instance.stat._currentWealth += 7;
+        GameManager.Instance.stat.CurrentMslStr += 7;
+        GameManager.Instance.stat.CurrentMoralStr += 7;
+        GameManager.Instance.stat.CurrentFavorability -= 14;
+        GameManager.Instance.stat.CurrentWealth += 7;
     }
 
     public void DRAWING() //그림그리기
@@ -178,10 +178,10 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.weeks += 3;
         GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        GameManager.Instance.stat._currentMslStr += 7;
-        GameManager.Instance.stat._currentMoralStr += 7;
-        GameManager.Instance.stat._cureentFavorability += 21;
-        GameManager.Instance.stat._currentWealth -= 14;
+        GameManager.Instance.stat.CurrentMslStr += 7;
+        GameManager.Instance.stat.CurrentMoralStr += 7;
+        GameManager.Instance.stat.CurrentFavorability += 21;
+        GameManager.Instance.stat.CurrentWealth -= 14;
     }
     #endregion
 
@@ -191,8 +191,8 @@ public class training : MonoBehaviour
 
             foreach (Story story in storys) //foreach 반복문
             {
-                if (story.goalStat._currentMslStr < GameManager.Instance.stat._currentMslStr && story.goalStat._currentMoralStr < GameManager.Instance.stat._currentMoralStr
-                    && story.goalStat._currentWealth < GameManager.Instance.stat._currentWealth && story.goalStat._cureentFavorability < GameManager.Instance.stat._cureentFavorability) //모든 조건 검사
+                if (story.goalStat._currentMslStr < GameManager.Instance.stat.CurrentMslStr && story.goalStat._currentMoralStr < GameManager.Instance.stat.CurrentMoralStr
+                    && story.goalStat._currentWealth < GameManager.Instance.stat.CurrentWealth && story.goalStat._cureentFavorability < GameManager.Instance.stat.CurrentFavorability) //모든 조건 검사
                 {
                     if (curStory != null) //만약 조건에 부합하는 스토리가 이미 존재했을경우
                     {

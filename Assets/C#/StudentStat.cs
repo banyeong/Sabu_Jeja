@@ -16,7 +16,7 @@ public class StudentStat
     {
         set
         {
-            _currentMslStr = Mathf.Clamp(_currentMslStr + value, 0, 1000);
+            _currentMslStr = Mathf.Clamp(value, 0, 1000);
         }
         get
         {
@@ -30,7 +30,7 @@ public class StudentStat
     {
         set
         {
-            _currentMoralStr = Mathf.Clamp(_currentMoralStr + value, 0, 1000);
+            _currentMoralStr = Mathf.Clamp(value, 0, 1000);
         }
         get
         {
@@ -44,7 +44,7 @@ public class StudentStat
     {
         set
         {
-            _currentWealth = Mathf.Clamp(_currentWealth + value, 0, 1000);
+            _currentWealth = Mathf.Clamp(value, 0, 1000);
         }
         get
         {
@@ -58,7 +58,7 @@ public class StudentStat
     {
         set
         {
-            _cureentFavorability = Mathf.Clamp(_cureentFavorability + value, 0, 1000);
+            _cureentFavorability = Mathf.Clamp(value, 0, 1000);
         }
         get
         {
