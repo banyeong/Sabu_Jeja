@@ -12,7 +12,7 @@ public class Story
 
 public class training : MonoBehaviour
 {
-    StudentStat DontDestroystat = new StudentStat();
+    StudentStat stat = new StudentStat();
 
     #region training list
     public string MoClear = "도력 정제";
@@ -50,138 +50,138 @@ public class training : MonoBehaviour
     #region trainig
     public void MOCLEAR() // 도력정제
     {
-        DontDestroy.stat.weeks += 2;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 2;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMslStr -= 7;
-        DontDestroy.stat._currentMoralStr += 14;
-        DontDestroy.stat._cureentFavorability += 7;
+        GameManager.Instance.stat._currentMslStr -= 7;
+        GameManager.Instance.stat._currentMoralStr += 14;
+        GameManager.Instance.stat._cureentFavorability += 7;
 
-        Debug.Log(DontDestroy.stat.weeks + "주째");
-        Debug.Log("근력 " + DontDestroy.stat._currentMoralStr + ", 도력 " + DontDestroy.stat._currentMoralStr + ", 호감도 " + DontDestroy.stat._cureentFavorability + ", 재력" + DontDestroy.stat._currentWealth);
+        Debug.Log(GameManager.Instance.stat.currentweeks + "주째");
+        Debug.Log("근력 " + GameManager.Instance.stat._currentMoralStr + ", 도력 " + GameManager.Instance.stat._currentMoralStr + ", 호감도 " + GameManager.Instance.stat._cureentFavorability + ", 재력" + GameManager.Instance.stat._currentWealth);
 
     }
 
     public void MODEVELOP() // 도술개발
     {
-        DontDestroy.stat.weeks += 3;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 3;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMslStr -= 14;
-        DontDestroy.stat._currentMoralStr += 42;
-        DontDestroy.stat._currentWealth -= 7;
+        GameManager.Instance.stat._currentMslStr -= 14;
+        GameManager.Instance.stat._currentMoralStr += 42;
+        GameManager.Instance.stat._currentWealth -= 7;
 
-        Debug.Log(DontDestroy.stat.weeks + "주째");
-        Debug.Log("근력 " + DontDestroy.stat._currentMoralStr + ", 도력 " + DontDestroy.stat._currentMoralStr + ", 재력 " + DontDestroy.stat._currentWealth);
+        Debug.Log(GameManager.Instance.stat.currentweeks + "주째");
+        Debug.Log("근력 " + GameManager.Instance.stat._currentMoralStr + ", 도력 " + GameManager.Instance.stat._currentMoralStr + ", 재력 " + GameManager.Instance.stat._currentWealth);
     }
 
     public void MOPRACTICE() // 도술연마
     {
-        DontDestroy.stat.weeks += 4;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 4;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMslStr += 7;
-        DontDestroy.stat._currentMoralStr += 35;
-        DontDestroy.stat._currentWealth -= 14;
+        GameManager.Instance.stat._currentMslStr += 7;
+        GameManager.Instance.stat._currentMoralStr += 35;
+        GameManager.Instance.stat._currentWealth -= 14;
     }
 
     public void MOCYCLE() // 운기조식
     {
-        DontDestroy.stat.weeks += 1;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 1;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMoralStr += 14;
-        DontDestroy.stat._cureentFavorability -= 7;
+        GameManager.Instance.stat._currentMoralStr += 14;
+        GameManager.Instance.stat._cureentFavorability -= 7;
     }
 
     public void PHYPRACTICE() // 체술단련
     {
-        DontDestroy.stat.weeks += 2;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 2;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMslStr += 14;
-        DontDestroy.stat._currentMoralStr -= 7;
-        DontDestroy.stat._cureentFavorability += 7;
+        GameManager.Instance.stat._currentMslStr += 14;
+        GameManager.Instance.stat._currentMoralStr -= 7;
+        GameManager.Instance.stat._cureentFavorability += 7;
     }
 
     public void SWORDSMS() // 검술단련
     {
-        DontDestroy.stat.weeks += 3;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 3;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMslStr += 42;
-        DontDestroy.stat._currentMoralStr -= 14;
-        DontDestroy.stat._currentWealth -= 7;
+        GameManager.Instance.stat._currentMslStr += 42;
+        GameManager.Instance.stat._currentMoralStr -= 14;
+        GameManager.Instance.stat._currentWealth -= 7;
     }
 
     public void SPEARSMS() // 창술단련
     {
-        DontDestroy.stat.weeks += 4;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 4;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMslStr += 35;
-        DontDestroy.stat._currentMoralStr += 7;
-        DontDestroy.stat._currentWealth -= 14;
+        GameManager.Instance.stat._currentMslStr += 35;
+        GameManager.Instance.stat._currentMoralStr += 7;
+        GameManager.Instance.stat._currentWealth -= 14;
     }
 
 
     public void BONGMS() // 봉술단련
     {
-        DontDestroy.stat.weeks += 1;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 1;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMslStr += 14;
-        DontDestroy.stat._cureentFavorability -= 7;
+        GameManager.Instance.stat._currentMslStr += 14;
+        GameManager.Instance.stat._cureentFavorability -= 7;
     }
 
     public void CALCSTUDY() //상술공부
     {
-        DontDestroy.stat.weeks += 4;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 4;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMoralStr -= 7;
-        DontDestroy.stat._currentWealth += 35;
+        GameManager.Instance.stat._currentMoralStr -= 7;
+        GameManager.Instance.stat._currentWealth += 35;
     }
 
     public void BOOKREAD() //도서읽기
     {
-        DontDestroy.stat.weeks += 4;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 4;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMslStr -= 7;
-        DontDestroy.stat._currentWealth += 35;
+        GameManager.Instance.stat._currentMslStr -= 7;
+        GameManager.Instance.stat._currentWealth += 35;
     }
 
     public void INSTRUMENT() //악기연주
     {
-        DontDestroy.stat.weeks += 2;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 2;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMslStr -= 7;
-        DontDestroy.stat._currentMoralStr += 7;
-        DontDestroy.stat._cureentFavorability += 14;
+        GameManager.Instance.stat._currentMslStr -= 7;
+        GameManager.Instance.stat._currentMoralStr += 7;
+        GameManager.Instance.stat._cureentFavorability += 14;
     }
 
     public void POEMWRITE() //시쓰기
     {
-        DontDestroy.stat.weeks += 1;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 1;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMslStr += 7;
-        DontDestroy.stat._currentMoralStr += 7;
-        DontDestroy.stat._cureentFavorability -= 14;
-        DontDestroy.stat._currentWealth += 7;
+        GameManager.Instance.stat._currentMslStr += 7;
+        GameManager.Instance.stat._currentMoralStr += 7;
+        GameManager.Instance.stat._cureentFavorability -= 14;
+        GameManager.Instance.stat._currentWealth += 7;
     }
 
     public void DRAWING() //그림그리기
     {
-        DontDestroy.stat.weeks += 3;
-        DontDestroy.stat.currentweeks += DontDestroy.stat.weeks;
+        GameManager.Instance.stat.weeks += 3;
+        GameManager.Instance.stat.currentweeks += stat.weeks;
 
-        DontDestroy.stat._currentMslStr += 7;
-        DontDestroy.stat._currentMoralStr += 7;
-        DontDestroy.stat._cureentFavorability += 21;
-        DontDestroy.stat._currentWealth -= 14;
+        GameManager.Instance.stat._currentMslStr += 7;
+        GameManager.Instance.stat._currentMoralStr += 7;
+        GameManager.Instance.stat._cureentFavorability += 21;
+        GameManager.Instance.stat._currentWealth -= 14;
     }
     #endregion
 
@@ -191,8 +191,8 @@ public class training : MonoBehaviour
 
             foreach (Story story in storys) //foreach 반복문
             {
-                if (story.goalStat._currentMslStr < DontDestroy.stat._currentMslStr && story.goalStat._currentMoralStr < DontDestroy.stat._currentMoralStr
-                    && story.goalStat._currentWealth < DontDestroy.stat._currentWealth && story.goalStat._cureentFavorability < DontDestroy.stat._cureentFavorability) //모든 조건 검사
+                if (story.goalStat._currentMslStr < GameManager.Instance.stat._currentMslStr && story.goalStat._currentMoralStr < GameManager.Instance.stat._currentMoralStr
+                    && story.goalStat._currentWealth < GameManager.Instance.stat._currentWealth && story.goalStat._cureentFavorability < GameManager.Instance.stat._cureentFavorability) //모든 조건 검사
                 {
                     if (curStory != null) //만약 조건에 부합하는 스토리가 이미 존재했을경우
                     {
@@ -215,6 +215,5 @@ public class training : MonoBehaviour
     private void Start()
     {
         
-        DontDestroystat = DontDestroy.stat;
     }
 }
