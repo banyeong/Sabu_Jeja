@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class DontDestroy : MonoBehaviour
 {
-    StudentStat stat;
+    public static StudentStat stat;
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);//깃허브 봇 실험
+        new StudentStat();
+        DontDestroyOnLoad(gameObject);
     }
 }
