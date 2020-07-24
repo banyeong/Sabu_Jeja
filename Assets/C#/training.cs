@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -50,8 +51,7 @@ public class training : MonoBehaviour
     #region trainig
     public void MOCLEAR() // 도력정제
     {
-        GameManager.Instance.stat.weeks += 2;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 2;
 
         GameManager.Instance.stat.CurrentMslStr -= 7;
         GameManager.Instance.stat.CurrentMoralStr += 14;
@@ -64,8 +64,7 @@ public class training : MonoBehaviour
 
     public void MODEVELOP() // 도술개발
     {
-        GameManager.Instance.stat.weeks += 3;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 3;
 
         GameManager.Instance.stat.CurrentMslStr -= 14;
         GameManager.Instance.stat.CurrentMoralStr += 42;
@@ -77,8 +76,7 @@ public class training : MonoBehaviour
 
     public void MOPRACTICE() // 도술연마
     {
-        GameManager.Instance.stat.weeks += 4;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 4;
 
         GameManager.Instance.stat.CurrentMslStr += 7;
         GameManager.Instance.stat.CurrentMoralStr += 35;
@@ -87,8 +85,7 @@ public class training : MonoBehaviour
 
     public void MOCYCLE() // 운기조식
     {
-        GameManager.Instance.stat.weeks += 1;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 1;
 
         GameManager.Instance.stat.CurrentMoralStr += 14;
         GameManager.Instance.stat.CurrentFavorability -= 7;
@@ -96,8 +93,7 @@ public class training : MonoBehaviour
 
     public void PHYPRACTICE() // 체술단련
     {
-        GameManager.Instance.stat.weeks += 2;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 2;
 
         GameManager.Instance.stat.CurrentMslStr += 14;
         GameManager.Instance.stat.CurrentMoralStr -= 7;
@@ -106,8 +102,7 @@ public class training : MonoBehaviour
 
     public void SWORDSMS() // 검술단련
     {
-        GameManager.Instance.stat.weeks += 3;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 3;
 
         GameManager.Instance.stat.CurrentMslStr += 42;
         GameManager.Instance.stat.CurrentMoralStr -= 14;
@@ -116,8 +111,7 @@ public class training : MonoBehaviour
 
     public void SPEARSMS() // 창술단련
     {
-        GameManager.Instance.stat.weeks += 4;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 4;
 
         GameManager.Instance.stat.CurrentMslStr += 35;
         GameManager.Instance.stat.CurrentMoralStr += 7;
@@ -127,8 +121,7 @@ public class training : MonoBehaviour
 
     public void BONGMS() // 봉술단련
     {
-        GameManager.Instance.stat.weeks += 1;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 1;
 
         GameManager.Instance.stat.CurrentMslStr += 14;
         GameManager.Instance.stat.CurrentFavorability -= 7;
@@ -136,8 +129,7 @@ public class training : MonoBehaviour
 
     public void CALCSTUDY() //상술공부
     {
-        GameManager.Instance.stat.weeks += 4;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 4;
 
         GameManager.Instance.stat.CurrentMoralStr -= 7;
         GameManager.Instance.stat.CurrentWealth += 35;
@@ -145,17 +137,15 @@ public class training : MonoBehaviour
 
     public void BOOKREAD() //도서읽기
     {
-        GameManager.Instance.stat.weeks += 4;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 4;
 
         GameManager.Instance.stat.CurrentMslStr -= 7;
         GameManager.Instance.stat.CurrentWealth += 35;
     }
 
     public void INSTRUMENT() //악기연주
-    {
-        GameManager.Instance.stat.weeks += 2;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+    {;
+        GameManager.Instance.stat.currentweeks += 2;
 
         GameManager.Instance.stat.CurrentMslStr -= 7;
         GameManager.Instance.stat.CurrentMoralStr += 7;
@@ -164,8 +154,7 @@ public class training : MonoBehaviour
 
     public void POEMWRITE() //시쓰기
     {
-        GameManager.Instance.stat.weeks += 1;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 1;
 
         GameManager.Instance.stat.CurrentMslStr += 7;
         GameManager.Instance.stat.CurrentMoralStr += 7;
@@ -175,8 +164,7 @@ public class training : MonoBehaviour
 
     public void DRAWING() //그림그리기
     {
-        GameManager.Instance.stat.weeks += 3;
-        GameManager.Instance.stat.currentweeks += stat.weeks;
+        GameManager.Instance.stat.currentweeks += 3;
 
         GameManager.Instance.stat.CurrentMslStr += 7;
         GameManager.Instance.stat.CurrentMoralStr += 7;
@@ -189,6 +177,8 @@ public class training : MonoBehaviour
     {
         Story curStory = null; //로드할 스토리
 
+        if (GameManager.Instance.stat.currentweeks >= GameManager.Instance.stat.weeks)
+        {
             foreach (Story story in storys) //foreach 반복문
             {
                 if (story.goalStat._currentMslStr < GameManager.Instance.stat.CurrentMslStr && story.goalStat._currentMoralStr < GameManager.Instance.stat.CurrentMoralStr
@@ -206,8 +196,11 @@ public class training : MonoBehaviour
                     }
                 }
 
-            //curStory의 index로 Scene을 Load한다.
-            SceneManager.LoadScene(curStory.index);
+                //curStory의 index로 Scene을 Load한다.
+                SceneManager.LoadScene(curStory.index);
+
+                GameManager.Instance.stat.weeks += 12; // 늘어나야 되는 주
+            }
         }
 
     }
