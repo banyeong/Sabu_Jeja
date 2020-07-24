@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Story/Story_12.unity
-    guid: aedff59a0fc5e7e4fa56a1fdade9e6b7
-  - enabled: 1
-    path: Assets/Scenes/Story/Story_2-2.unity
-    guid: 03b15f23dd261e242b04f82c1a2d82d4
+    path: Assets/Scenes/Title.unity
+    guid: a2137caa1ce29574a92c7d006f5aa7f4
   - enabled: 1
     path: Assets/Scenes/Story/Story_1.unity
     guid: 8d331f7dd6cdd844a8457ec7da96859f
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_2-2.unity
+    guid: 03b15f23dd261e242b04f82c1a2d82d4
   - enabled: 1
     path: Assets/Scenes/Story/Story_2-1.unity
     guid: 80bfc387461293a449c28e25c0e9612e
@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Story/Story_11.unity
     guid: 1a8b4536fa53b7141a3bfc75c8c4f7b7
+  - enabled: 1
+    path: Assets/Scenes/Story/Story_12.unity
+    guid: aedff59a0fc5e7e4fa56a1fdade9e6b7
   - enabled: 1
     path: Assets/Scenes/Training.unity
     guid: cd2e54f07eac6414b91995c954f4b8b8

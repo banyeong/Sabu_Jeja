@@ -45,7 +45,7 @@ public class story_4 : MonoBehaviour
                 }
                 else
                 {
-                    SceneManager.LoadScene(14);
+                    SceneManager.LoadScene(15);
                 }
             }
         }

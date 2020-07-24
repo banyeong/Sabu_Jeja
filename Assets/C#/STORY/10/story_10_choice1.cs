@@ -60,7 +60,7 @@ public class story_10_choice1 : MonoBehaviour
                 }
                 else
                 {
-                    SceneManager.LoadScene(14);
+                    SceneManager.LoadScene(15);
                 }
             }
         }

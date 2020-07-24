@@ -59,7 +59,7 @@ public class story_2_choice2 : MonoBehaviour
                 }
                 else
                 {
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadScene(2);
                 }
             }
         }

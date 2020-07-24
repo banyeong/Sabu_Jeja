@@ -34,8 +34,8 @@ public class training : MonoBehaviour
     //모든 스토리 ( index, stat{ 0, 0, 0, 0 }, priority )
     private Story[] storys =
                             {
-                            new Story() { index = 2, goalStat = new StudentStat(){_currentMslStr = -1, _currentMoralStr = -1, _currentWealth = -1, _cureentFavorability = -1}, priority = 0 }, //1
-                            new Story() { index = 3, goalStat = new StudentStat(){_currentMslStr = 300, _currentMoralStr = -1, _currentWealth = -1, _cureentFavorability = -1}, priority = 20 }, //2
+                            new Story() { index = 1, goalStat = new StudentStat(){_currentMslStr = -1, _currentMoralStr = -1, _currentWealth = -1, _cureentFavorability = -1}, priority = 0 }, //1
+                            new Story() { index = 2, goalStat = new StudentStat(){_currentMslStr = 300, _currentMoralStr = -1, _currentWealth = -1, _cureentFavorability = -1}, priority = 20 }, //2
                             new Story() { index = 4, goalStat = new StudentStat(){_currentMslStr = -1, _currentMoralStr = 300, _currentWealth = -1, _cureentFavorability = -1}, priority = 30 }, //3
                             new Story() { index = 5, goalStat = new StudentStat(){_currentMslStr = -1, _currentMoralStr = -1, _currentWealth = 500, _cureentFavorability = -1}, priority = 40 }, //4
                             new Story() { index = 6, goalStat = new StudentStat(){_currentMslStr = -1, _currentMoralStr = -1, _currentWealth = -1, _cureentFavorability = 300}, priority = 60 }, //5
@@ -45,7 +45,7 @@ public class training : MonoBehaviour
                             new Story() { index = 10, goalStat = new StudentStat(){_currentMslStr = -1, _currentMoralStr = 500, _currentWealth = 500, _cureentFavorability = 500}, priority = 110 }, //9
                             new Story() { index = 11, goalStat = new StudentStat(){_currentMslStr = 800, _currentMoralStr = 500, _currentWealth = -1, _cureentFavorability = 500}, priority = 150 }, //10
                             new Story() { index = 12, goalStat = new StudentStat(){_currentMslStr = 500, _currentMoralStr = 800, _currentWealth = -1, _cureentFavorability = 500}, priority = 170 }, //11
-                            new Story() { index = 0, goalStat = new StudentStat(){_currentMslStr = 800, _currentMoralStr = 800, _currentWealth = -1, _cureentFavorability = 500}, priority = 200 }, //12
+                            new Story() { index = 13, goalStat = new StudentStat(){_currentMslStr = 800, _currentMoralStr = 800, _currentWealth = -1, _cureentFavorability = 500}, priority = 200 }, //12
                             };
 
     #region training                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             #region trainig

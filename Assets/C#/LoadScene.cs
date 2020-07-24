@@ -7,10 +7,10 @@ public class LoadScene : MonoBehaviour
 {
     public void LoadTraining()
     {
-        SceneManager.LoadScene(13);
+        SceneManager.LoadScene(14);
     }
     public void LoadMain()
     {
-        SceneManager.LoadScene(14);
+        SceneManager.LoadScene(15);
     }
 }
