@@ -7,8 +7,8 @@ public class StudentStat
 {
     public static StudentStat instance;
     
-    public int weeks = 12; // 3개월 지나면 초기화하기 위해. 3개월 스토리 보고 나면 초기화 되는 함수.
-    public int currentweeks; // 144주 지나면 엔딩 띄우기 위해, 지금 몇 주인지 알리기 위해. 초기화 되지 않는 변수.
+    public int weeks; 
+    public int currentweeks;
 
     //근력
     public int _currentMslStr;

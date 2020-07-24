@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class story_2_2 : MonoBehaviour
 {
@@ -44,7 +45,7 @@ public class story_2_2 : MonoBehaviour
                 }
                 else
                 {
-                    
+                    SceneManager.LoadScene(14);
                 }
             }
         }

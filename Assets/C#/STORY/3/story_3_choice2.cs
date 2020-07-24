@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.UIElements;
 using UnityEditor;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 #pragma warning disable 0649
 public class story_3_choice2 : MonoBehaviour
@@ -59,7 +60,7 @@ public class story_3_choice2 : MonoBehaviour
                 }
                 else
                 {
-                    //씬 전환
+                    SceneManager.LoadScene(14);
                 }
             }
         }

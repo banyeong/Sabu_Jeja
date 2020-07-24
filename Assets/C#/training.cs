@@ -48,7 +48,7 @@ public class training : MonoBehaviour
                             new Story() { index = 0, goalStat = new StudentStat(){_currentMslStr = 800, _currentMoralStr = 800, _currentWealth = -1, _cureentFavorability = 500}, priority = 200 }, //12
                             };
 
-    #region trainig
+    #region training                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             #region trainig
     public void MOCLEAR() // 도력정제
     {
         GameManager.Instance.stat.currentweeks += 2;
@@ -173,12 +173,14 @@ public class training : MonoBehaviour
     }
     #endregion
 
-    public void StoryProgress()
+    public void StoryProgress() //3개월 스토리 진행 함수
     {
         Story curStory = null; //로드할 스토리
 
-        if (GameManager.Instance.stat.currentweeks >= GameManager.Instance.stat.weeks)
+        if (GameManager.Instance.stat.currentweeks >= GameManager.Instance.stat.weeks) // 3개월 루프
         {
+            GameManager.Instance.stat.weeks += 12; // 늘어나야 되는 주
+
             foreach (Story story in storys) //foreach 반복문
             {
                 if (story.goalStat._currentMslStr < GameManager.Instance.stat.CurrentMslStr && story.goalStat._currentMoralStr < GameManager.Instance.stat.CurrentMoralStr
@@ -195,18 +197,14 @@ public class training : MonoBehaviour
                         curStory = story;
                     }
                 }
-
                 //curStory의 index로 Scene을 Load한다.
                 SceneManager.LoadScene(curStory.index);
-
-                GameManager.Instance.stat.weeks += 12; // 늘어나야 되는 주
             }
         }
 
-    }
-
-    private void Start()
-    {
-        
+        else if (GameManager.Instance.stat.currentweeks >= 144)
+        {
+            //엔딩 함수
+        }
     }
 }

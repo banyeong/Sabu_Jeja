@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
@@ -57,7 +58,7 @@ public class story_1_1 : MonoBehaviour //아무런 조건도 충족하지 못함
 
                 else
                 {
-                    
+                    SceneManager.LoadScene(14);
                 }
             }
         }
