@@ -1284,7 +1284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.203125, y: -407.0996}
+  m_AnchoredPosition: {x: -6.203125, y: -402}
   m_SizeDelta: {x: 1695.4775, y: 197.70758}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1010629950
@@ -1307,7 +1307,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8adb12918498acd4e8cce89c855e51f6, type: 3}
+    m_Font: {fileID: 12800000, guid: 46b1f7bcff7e4964aab017083ba25eac, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -1445,8 +1445,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: -29.302}
-  m_SizeDelta: {x: 462.03558, y: 115.39549}
+  m_AnchoredPosition: {x: -8.3, y: -27.7}
+  m_SizeDelta: {x: 446.6823, y: 118.468185}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337332116
 MonoBehaviour:
@@ -1468,7 +1468,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8adb12918498acd4e8cce89c855e51f6, type: 3}
+    m_Font: {fileID: 12800000, guid: 46b1f7bcff7e4964aab017083ba25eac, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -1806,8 +1806,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: -29.302}
-  m_SizeDelta: {x: 462.03558, y: 115.39549}
+  m_AnchoredPosition: {x: 73.5, y: -27.8}
+  m_SizeDelta: {x: 465.10626, y: 118.468185}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2000684490
 MonoBehaviour:
@@ -1829,7 +1829,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8adb12918498acd4e8cce89c855e51f6, type: 3}
+    m_Font: {fileID: 12800000, guid: 46b1f7bcff7e4964aab017083ba25eac, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
