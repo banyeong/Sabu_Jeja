@@ -22,7 +22,7 @@ public class Mountain : MonoBehaviour
 
     public void NextDialogue() //대화활성화
     {
-        GameManager.Instance.stat._currentMoralStr += 14;
+
 
         txt_dialogue.text = dialogue[count].dialogue;
         sprite_Charcter.sprite = dialogue[count].cg;
@@ -44,6 +44,7 @@ public class Mountain : MonoBehaviour
                 }
                 else
                 {
+                    GameManager.Instance.stat._currentMoralStr += 14;
                     //씬전환
                 }
             }
