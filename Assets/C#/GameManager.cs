@@ -9,15 +9,7 @@ public class GameManager : MonoBehaviour
 
     public StudentStat stat { get; set; }
 
-    public Text DateText; // 메인화면 날짜 텍스트
-    public int Year;
-    public int Month;
-
-    //날짜 치환 함수 필요할 것 같음
-    public void DateChange()
-    {
-        
-    }
+   
 
     private void Awake()
     {
@@ -36,6 +28,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        DateText.text = GameManager.Instance.stat.currentweeks + "주"; //몇 년 몇 개월 몇 주로 작성할 필요 있음
+        
     }
 }

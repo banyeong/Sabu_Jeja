@@ -8,8 +8,3 @@ public enum BTNType
     Continue,
     Quit,
 }
-
-public class MainUI : MonoBehaviour
-{
-    
-}
