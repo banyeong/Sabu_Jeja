@@ -251,7 +251,6 @@ GameObject:
   - component: {fileID: 250664681}
   - component: {fileID: 250664683}
   - component: {fileID: 250664682}
-  - component: {fileID: 250664684}
   m_Layer: 5
   m_Name: "\uB0A0\uC9DC"
   m_TagString: Untagged
@@ -299,7 +298,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 46b1f7bcff7e4964aab017083ba25eac, type: 3}
-    m_FontSize: 100
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -310,7 +309,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1\uB144 0\uAC1C\uC6D4 1\uC8FC"
+  m_Text: "0\uB144 0\uAC1C\uC6D4 1\uC8FC"
 --- !u!222 &250664683
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -319,21 +318,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250664680}
   m_CullTransparentMesh: 0
---- !u!114 &250664684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250664680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1bdbec0aec6e9a44802896a9b8fdcd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DateText: {fileID: 250664682}
-  Year: 0
-  Month: 0
 --- !u!1 &477943549
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,6 +750,7 @@ GameObject:
   - component: {fileID: 865798689}
   - component: {fileID: 865798688}
   - component: {fileID: 865798687}
+  - component: {fileID: 865798690}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -838,6 +823,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &865798690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865798686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1f62f0ec49e95488bb785ebb3649e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DateText: {fileID: 250664682}
+  MslStr: {fileID: 745866430}
+  MoralStr: {fileID: 1828331290}
+  Wealth: {fileID: 1035435206}
+  Favorability: {fileID: 1180744116}
+  one_weeks: 0
+  one_Month: 12
+  one_Year: 12
 --- !u!1 &958588904
 GameObject:
   m_ObjectHideFlags: 0

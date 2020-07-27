@@ -19,11 +19,16 @@ public class Main_UI : MonoBehaviour
     {
         one_weeks = GameManager.Instance.stat.currentweeks % 4;
         one_Month = GameManager.Instance.stat.currentweeks / 4;
-        one_Year = GameManager.Instance.stat.currentweeks / 48;
+        one_Month = one_Month % 13;
+        one_Year = GameManager.Instance.stat.currentweeks / 52;
         
         if (one_weeks % 4 == 0)
         {
             one_weeks = 1;
+        }
+        if (one_Month % 13 == 0)
+        {
+            one_Month = 1;
         }
     }
 
