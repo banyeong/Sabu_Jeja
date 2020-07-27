@@ -32,11 +32,6 @@ public class Main_UI : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        Debug.Log(GameManager.Instance.stat);
-    }
-    // Update is called once per frame
     void Update()
     {
         DateChange();

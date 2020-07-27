@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class Mountain2 : MonoBehaviour
 {
@@ -22,8 +23,7 @@ public class Mountain2 : MonoBehaviour
 
     public void NextDialogue() //대화활성화
     {
-        GameManager.Instance.stat._currentMslStr += 7;
-        GameManager.Instance.stat._cureentFavorability += 7;
+
 
         sprite_Charcter.gameObject.SetActive(true);
         sprite_name.gameObject.SetActive(true);
@@ -48,7 +48,9 @@ public class Mountain2 : MonoBehaviour
                 }
                 else
                 {
-                    //씬전환
+                    GameManager.Instance.stat.CurrentMslStr += 7;
+                    GameManager.Instance.stat.CurrentFavorability += 7;
+                    SceneManager.LoadScene(15);
                 }
             }
         }

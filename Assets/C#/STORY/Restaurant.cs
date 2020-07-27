@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class Restaurant : MonoBehaviour
 {
@@ -22,8 +23,6 @@ public class Restaurant : MonoBehaviour
 
     public void NextDialogue() //대화활성화
     {
-        GameManager.Instance.stat._cureentFavorability += 14;
-
         txt_dialogue.text = dialogue[count].dialogue;
         sprite_Charcter.sprite = dialogue[count].cg;
         sprite_name.sprite = dialogue[count].nickname;
@@ -44,7 +43,8 @@ public class Restaurant : MonoBehaviour
                 }
                 else
                 {
-                    //씬전환
+                    GameManager.Instance.stat.CurrentFavorability += 14;
+                    SceneManager.LoadScene(15);
                 }
             }
         }

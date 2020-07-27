@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class Lake2 : MonoBehaviour
 {
@@ -22,9 +23,6 @@ public class Lake2 : MonoBehaviour
 
     public void NextDialogue() //대화활성화
     {
-        GameManager.Instance.stat._currentMoralStr += 7;
-        GameManager.Instance.stat._cureentFavorability += 7;
-
         txt_dialogue.text = dialogue[count].dialogue;
         sprite_Charcter.sprite = dialogue[count].cg;
         sprite_name.sprite = dialogue[count].nickname;
@@ -45,7 +43,9 @@ public class Lake2 : MonoBehaviour
                 }
                 else
                 {
-                    //씬전환
+                    GameManager.Instance.stat.CurrentMoralStr += 7;
+                    GameManager.Instance.stat.CurrentFavorability += 7;
+                    SceneManager.LoadScene(15);
                 }
             }
         }

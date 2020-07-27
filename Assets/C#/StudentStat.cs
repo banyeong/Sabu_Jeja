@@ -14,7 +14,7 @@ public class StudentStat
     public int _currentMslStr;
     public int CurrentMslStr
     {
-        set
+        set                      
         {
             _currentMslStr = Mathf.Clamp(value, 0, 1000);
         }
