@@ -1,7 +1,16 @@
 fileFormatVersion: 2
-guid: 522dbb04be218474bb1b6156356e0000
+guid: 391b318f55e60d04d90e76ba11ddca53
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -250666055538823455
+    second: "\uC0AC\uBD80\uC640 \uC81C\uC790 \uC2DC\uC791 \uBC84\uD2BC_0"
+  - first:
+      213: 7988535962036439800
+    second: "\uC0AC\uBD80\uC640 \uC81C\uC790 \uC2DC\uC791 \uBC84\uD2BC_1"
+  - first:
+      213: 5822135372547446909
+    second: "\uC0AC\uBD80\uC640 \uC81C\uC790 \uC2DC\uC791 \uBC84\uD2BC_2"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -61,7 +70,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -73,7 +82,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -85,7 +94,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "\uC0AC\uBD80\uC640 \uC81C\uC790 \uC2DC\uC791 \uBC84\uD2BC_0"
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 505
+        width: 533
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee2c52fc84758cf0800000000000000
+      internalID: -250666055538823455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uC0AC\uBD80\uC640 \uC81C\uC790 \uC2DC\uC791 \uBC84\uD2BC_1"
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 349
+        width: 533
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa8d94e12bfcde60800000000000000
+      internalID: 7988535962036439800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uC0AC\uBD80\uC640 \uC81C\uC790 \uC2DC\uC791 \uBC84\uD2BC_2"
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 191
+        width: 533
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d785dea36416cc050800000000000000
+      internalID: 5822135372547446909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
