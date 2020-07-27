@@ -11,32 +11,31 @@ public class Main_UI : MonoBehaviour
     public Text Wealth; //재력 텍스트
     public Text Favorability; //호감도 텍스트
 
-    public int one_Month = 12; //기본 한 달
-    public int one_Year = 12; //기본 일 년
-    public int Year;
-    public int Month;
+    public int one_weeks = 1;
+    public int one_Month = 0;
+    public int one_Year = 0;
 
-    //날짜 치환 함수 필요할 것 같음
     public void DateChange()
     {
-        if (GameManager.Instance.stat.currentweeks >= one_Month) //12주 되면 한 달 취급
+        one_weeks = GameManager.Instance.stat.currentweeks % 4;
+        one_Month = GameManager.Instance.stat.currentweeks / 4;
+        one_Year = GameManager.Instance.stat.currentweeks / 48;
+        
+        if (one_weeks % 4 == 0)
         {
-            Month++;
-            one_Month++;
-        }
-
-        if (Month >= one_Year) //12달 되면 일 년 취급
-        {
-            Year++;
-            one_Year++;
+            one_weeks = 1;
         }
     }
 
+    private void Start()
+    {
+        Debug.Log(GameManager.Instance.stat);
+    }
     // Update is called once per frame
     void Update()
     {
         DateChange();
-        DateText.text = Year + "년 " + Month + "개월 " + GameManager.Instance.stat.currentweeks + "주";
+        DateText.text = (int)one_Year + "년 " + (int)one_Month + "개월 " + one_weeks + "주";
 
         MslStr.text = "근력 : " + GameManager.Instance.stat.CurrentMslStr;
         MoralStr.text = "도력 : " + GameManager.Instance.stat.CurrentMoralStr;

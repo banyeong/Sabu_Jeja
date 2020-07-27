@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour
 
     public StudentStat stat { get; set; }
 
-   
-
     private void Awake()
     {
         if(Instance == null)
