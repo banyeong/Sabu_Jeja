@@ -6,9 +6,11 @@ using UnityEngine;
 public class StudentStat
 {
     public static StudentStat instance;
-    
-    public int weeks; 
-    public int currentweeks;
+
+    public int current_money; //현재 돈
+    public int money_weeks; //한 달마다 과외비
+    public int weeks; // 12주(세 달)
+    public int currentweeks; // 현재 주
 
     //근력
     public int _currentMslStr;
