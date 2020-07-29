@@ -612,7 +612,7 @@ MonoBehaviour:
   sprite_Charcter: {fileID: 1852322955}
   sprite_dialogue: {fileID: 1228703614}
   txt_dialogue: {fileID: 1010629950}
-  sprite_name: {fileID: 0}
+  sprite_name: {fileID: 1260272329}
   sprite_background: {fileID: 631892014}
   choice_1: {fileID: 805036488}
   choice_2: {fileID: 44811462}
