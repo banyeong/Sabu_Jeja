@@ -20,8 +20,8 @@ public class Main_UI : MonoBehaviour
 
     public void DateChange()
     {
-        one_weeks = GameManager.Instance.stat.currentweeks % 5;
-        one_Month = GameManager.Instance.stat.currentweeks / 5;
+        one_weeks = GameManager.Instance.stat.currentweeks % 4;
+        one_Month = GameManager.Instance.stat.currentweeks / 4;
         one_Month = one_Month % 13;
         one_Year = GameManager.Instance.stat.currentweeks / 52;
 
@@ -61,13 +61,13 @@ public class Main_UI : MonoBehaviour
             
             if ((GameManager.Instance.stat.CurrentWealth <= 100) && (GameManager.Instance.stat.CurrentFavorability <= 100))
             {
-                GameManager.Instance.stat.current_money += 200;
+                GameManager.Instance.stat.Current_Money += 200;
             }
             else
             {
-                GameManager.Instance.stat.current_money += 200;
-                GameManager.Instance.stat.current_money += (GameManager.Instance.stat.CurrentWealth - 100) * 10;
-                GameManager.Instance.stat.current_money += (GameManager.Instance.stat.CurrentFavorability - 100) * 5;
+                GameManager.Instance.stat.Current_Money += 200;
+                GameManager.Instance.stat.Current_Money += (GameManager.Instance.stat.CurrentWealth - 100) * 10;
+                GameManager.Instance.stat.Current_Money += (GameManager.Instance.stat.CurrentFavorability - 100) * 5;
             }
         }
     }
@@ -89,6 +89,6 @@ public class Main_UI : MonoBehaviour
         Wealth.text = "재력 : " + GameManager.Instance.stat.CurrentWealth;
         Favorability.text = "호감도 : " + GameManager.Instance.stat.CurrentFavorability;
 
-        Gold.text = GameManager.Instance.stat.current_money + " G";
+        Gold.text = GameManager.Instance.stat.Current_Money + " G";
     }
 }

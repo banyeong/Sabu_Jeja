@@ -5,12 +5,24 @@ using UnityEngine;
 
 public class StudentStat
 {
-    public static StudentStat instance;
-
-    public int current_money; //현재 돈
     public int money_weeks; //한 달마다 과외비
     public int weeks; // 12주(세 달)
     public int currentweeks; // 현재 주
+
+
+    //현재 돈
+    public int _current_money;
+    public int Current_Money
+    {
+        set
+        {
+            _current_money = Mathf.Clamp(value, 0, 1000000);
+        }
+        get
+        {
+            return _current_money;
+        }
+    }
 
     //근력
     public int _currentMslStr;
@@ -66,11 +78,5 @@ public class StudentStat
         {
             return _cureentFavorability;
         }
-    }
-
-    // Start is called before the first frame update
-    public void Start()
-    {
-        instance = this;
     }
 }

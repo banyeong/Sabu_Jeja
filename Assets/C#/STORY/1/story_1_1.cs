@@ -1,14 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 [System.Serializable]
-public class Dialogue //집어 넣을 대화와 캐릭터이미지, 나중에 배경도 선언 하면 배경 바뀌게도 할 수 있을 듯함.
+public class Dialogue
 {
     [TextArea]
     public string dialogue;
@@ -17,7 +15,7 @@ public class Dialogue //집어 넣을 대화와 캐릭터이미지, 나중에 �
     public Sprite nickname;
 }
 
-public class story_1_1 : MonoBehaviour //아무런 조건도 충족하지 못함
+public class story_1_1 : MonoBehaviour
 {
     #pragma warning disable 0649
 
@@ -34,8 +32,6 @@ public class story_1_1 : MonoBehaviour //아무런 조건도 충족하지 못함
 
     public void NextDialogue() //대화활성화
     {
-        StudentStat studentStat = new StudentStat();
-
         sprite_Charcter.gameObject.SetActive(true);
         txt_dialogue.text = dialogue[count].dialogue;
         sprite_Charcter.sprite = dialogue[count].cg;
@@ -44,7 +40,6 @@ public class story_1_1 : MonoBehaviour //아무런 조건도 충족하지 못함
         count++;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(isDialogue)
