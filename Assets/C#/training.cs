@@ -132,7 +132,7 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.currentweeks += 4;
 
         GameManager.Instance.stat.CurrentMoralStr -= 7;
-        GameManager.Instance.stat.CurrentWealth += 35;
+        GameManager.Instance.stat.CurrentWealth += 28;
     }
 
     public void BOOKREAD() //도서읽기
@@ -140,7 +140,7 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.currentweeks += 4;
 
         GameManager.Instance.stat.CurrentMslStr -= 7;
-        GameManager.Instance.stat.CurrentWealth += 35;
+        GameManager.Instance.stat.CurrentWealth += 28;
     }
 
     public void INSTRUMENT() //악기연주
