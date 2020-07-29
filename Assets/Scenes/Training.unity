@@ -3601,7 +3601,7 @@ MonoBehaviour:
   explain:
   - dialogue: "\uBD09\uC744 \uC774\uC6A9\uD55C \uBC29\uC5B4\uC220\uC744 \uC218\uB828\uD558\uC5EC
       \uBC29\uC5B4 \uB2A5\uB825\uC744 \uAE30\uB978\uB2E4.\n\n1\uC8FC / \uADFC\uB825
-      +14 / \uD638\uAC10\uB3C4 -7"
+      +20 / \uD638\uAC10\uB3C4 -7"
     cg: {fileID: 0}
     bg: {fileID: 0}
     nickname: {fileID: 0}
