@@ -6,21 +6,32 @@ using UnityEngine.SceneManagement;
 //버튼 관리
 public class NewBtn : MonoBehaviour
 {
-    public BTNType currentType;
+    [SerializeField] private GameObject FINISH;
 
-    public void OnBtnClick()
+    public void ESC() //ESC 눌렀을 때 게임 종료 창 띄우기
     {
-        switch (currentType)
+        FINISH.gameObject.SetActive(true);
+    }
+
+    public void ESC_YES() //게임 종료
+    {
+#if UNITY_EDITOR //에디터일때
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
+    }
+
+    public void ESC_NO() //종료 창 숨기기
+    {
+        FINISH.gameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            case BTNType.New:
-                print("새게임");
-                break;
-            case BTNType.Continue:
-                print("이어하기");
-                break;
-            case BTNType.Quit:
-                print("나가기");
-                break;
+            ESC();
         }
     }
 }
