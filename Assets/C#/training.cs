@@ -15,7 +15,7 @@ public class training : MonoBehaviour
 {
     StudentStat stat = new StudentStat();
 
-    #region training list
+    /*#region training list
     public string MoClear = "도력 정제";
     public string MoDevelop = "도력 개발";
     public string MoPractice = "도술 연마";
@@ -29,7 +29,7 @@ public class training : MonoBehaviour
     public string Instrument = "악기 연주";
     public string PoemWrite = "시 쓰기";
     public string drawing = "그림 그리기";
-    #endregion
+    #endregion*/
 
     //모든 스토리 ( index, stat{ 0, 0, 0, 0 }, priority )
     private Story[] storys =
