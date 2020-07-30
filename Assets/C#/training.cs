@@ -14,8 +14,6 @@ public class Story
 
 public class training : MonoBehaviour
 {
-    StudentStat stat = new StudentStat();
-
     //모든 스토리 ( index, stat{ 0, 0, 0, 0 }, priority )
     private Story[] storys =
                             {
@@ -220,9 +218,9 @@ public class training : MonoBehaviour
                         curStory = story;
                     }
                 }
-                //curStory의 index로 Scene을 Load한다.
-                SceneManager.LoadScene(curStory.index);
             }
+            //curStory의 index로 Scene을 Load한다.
+            SceneManager.LoadScene(curStory.index);
         }
 
         else if (GameManager.Instance.stat.currentweeks >= 144)
