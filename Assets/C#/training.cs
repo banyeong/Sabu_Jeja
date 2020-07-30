@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Story
 {
@@ -14,22 +15,6 @@ public class Story
 public class training : MonoBehaviour
 {
     StudentStat stat = new StudentStat();
-
-    /*#region training list
-    public string MoClear = "도력 정제";
-    public string MoDevelop = "도력 개발";
-    public string MoPractice = "도술 연마";
-    public string MoCycle = "운기조식";
-    public string PhyPractice = "체술 단련";
-    public string SwordsMS = "검술 단련";
-    public string SpearsMS = "창술 단련";
-    public string BongMS = "봉술 단련";
-    public string CalcStudy = "상술 공부";
-    public string BookRead = "도서 읽기";
-    public string Instrument = "악기 연주";
-    public string PoemWrite = "시 쓰기";
-    public string drawing = "그림 그리기";
-    #endregion*/
 
     //모든 스토리 ( index, stat{ 0, 0, 0, 0 }, priority )
     private Story[] storys =
@@ -48,6 +33,25 @@ public class training : MonoBehaviour
                             new Story() { index = 13, goalStat = new StudentStat(){_currentMslStr = 800, _currentMoralStr = 800, _currentWealth = -1, _cureentFavorability = 500}, priority = 200 }, //12
                             };
 
+    //알림창 요소
+    [SerializeField] private GameObject Big;
+    [SerializeField] private UnityEngine.UI.Button Back;
+    [SerializeField] private SpriteRenderer Finish;
+    [SerializeField] private Text Stat;
+
+    public void TR_Finish()//수련 완료 했을 때 뜨는 알림창 함수
+    {
+        Big.gameObject.SetActive(true);
+
+        Stat.text = "근력 " + GameManager.Instance.stat.CurrentMslStr + " / " + "도력 " + GameManager.Instance.stat.CurrentMoralStr + " / " + "재력 "
+                    + GameManager.Instance.stat.CurrentWealth + " / " + "호감도 " + GameManager.Instance.stat.CurrentFavorability;
+    }
+
+    public void TR_HIDE() //완료창 뒤로가기 눌렀을 때 숨겨짐
+    {
+        Big.gameObject.SetActive(false);
+    }
+
     #region training                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             #region trainig
     public void MOCLEAR() // 도력정제
     {
@@ -57,9 +61,7 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMoralStr += 18;
         GameManager.Instance.stat.CurrentFavorability += 7;
 
-        Debug.Log(GameManager.Instance.stat.currentweeks + "주째");
-        Debug.Log("근력 " + GameManager.Instance.stat.CurrentMslStr + ", 도력 " + GameManager.Instance.stat.CurrentMoralStr + ", 호감도 " + GameManager.Instance.stat.CurrentFavorability + ", 재력" + GameManager.Instance.stat.CurrentWealth);
-
+        TR_Finish();
     }
 
     public void MODEVELOP() // 도술개발
@@ -70,8 +72,7 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMoralStr += 42;
         GameManager.Instance.stat.CurrentWealth -= 7;
 
-        Debug.Log(GameManager.Instance.stat.currentweeks + "주째");
-        Debug.Log("근력 " + GameManager.Instance.stat.CurrentMslStr + ", 도력 " + GameManager.Instance.stat.CurrentMoralStr + ", 재력 " + GameManager.Instance.stat.CurrentWealth);
+        TR_Finish();
     }
 
     public void MOPRACTICE() // 도술연마
@@ -81,6 +82,8 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMslStr += 7;
         GameManager.Instance.stat.CurrentMoralStr += 35;
         GameManager.Instance.stat.CurrentWealth -= 14;
+
+        TR_Finish();
     }
 
     public void MOCYCLE() // 운기조식
@@ -89,6 +92,8 @@ public class training : MonoBehaviour
 
         GameManager.Instance.stat.CurrentMoralStr += 20;
         GameManager.Instance.stat.CurrentFavorability -= 7;
+
+        TR_Finish();
     }
 
     public void PHYPRACTICE() // 체술단련
@@ -98,6 +103,8 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMslStr += 18;
         GameManager.Instance.stat.CurrentMoralStr -= 7;
         GameManager.Instance.stat.CurrentFavorability += 7;
+
+        TR_Finish();
     }
 
     public void SWORDSMS() // 검술단련
@@ -107,6 +114,8 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMslStr += 42;
         GameManager.Instance.stat.CurrentMoralStr -= 12;
         GameManager.Instance.stat.CurrentWealth -= 7;
+
+        TR_Finish();
     }
 
     public void SPEARSMS() // 창술단련
@@ -116,6 +125,8 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMslStr += 35;
         GameManager.Instance.stat.CurrentMoralStr += 7;
         GameManager.Instance.stat.CurrentWealth -= 14;
+
+        TR_Finish();
     }
 
 
@@ -125,6 +136,8 @@ public class training : MonoBehaviour
 
         GameManager.Instance.stat.CurrentMslStr += 20;
         GameManager.Instance.stat.CurrentFavorability -= 7;
+
+        TR_Finish();
     }
 
     public void CALCSTUDY() //상술공부
@@ -133,6 +146,8 @@ public class training : MonoBehaviour
 
         GameManager.Instance.stat.CurrentMoralStr -= 7;
         GameManager.Instance.stat.CurrentWealth += 30;
+
+        TR_Finish();
     }
 
     public void BOOKREAD() //도서읽기
@@ -141,6 +156,8 @@ public class training : MonoBehaviour
 
         GameManager.Instance.stat.CurrentMslStr -= 7;
         GameManager.Instance.stat.CurrentWealth += 30;
+
+        TR_Finish();
     }
 
     public void INSTRUMENT() //악기연주
@@ -150,6 +167,8 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMslStr -= 7;
         GameManager.Instance.stat.CurrentMoralStr += 7;
         GameManager.Instance.stat.CurrentFavorability += 28;
+
+        TR_Finish();
     }
 
     public void POEMWRITE() //시쓰기
@@ -160,6 +179,8 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMoralStr += 7;
         GameManager.Instance.stat.CurrentFavorability -= 14;
         GameManager.Instance.stat.CurrentWealth += 7;
+
+        TR_Finish();
     }
 
     public void DRAWING() //그림그리기
@@ -170,6 +191,8 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMoralStr += 7;
         GameManager.Instance.stat.CurrentFavorability += 28;
         GameManager.Instance.stat.CurrentWealth -= 14;
+
+        TR_Finish();
     }
     #endregion
 
