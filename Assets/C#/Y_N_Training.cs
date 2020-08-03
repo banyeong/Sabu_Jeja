@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 [System.Serializable]
 
@@ -17,6 +18,7 @@ public class Y_N_Training : MonoBehaviour
 
     [SerializeField] private Dialogue[] trname;
     [SerializeField] private Dialogue[] explain;
+
     private int count = 0;
 
     public void showPOPUP()

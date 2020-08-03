@@ -41,16 +41,6 @@ public class Main_UI : MonoBehaviour
         }
 
         DateText.text = dateText;
-
-        /*if (one_weeks % 4 == 0)
-        {
-            one_weeks = 1;
-        }
-
-        if (one_Month % 13 == 0)
-        {
-            one_Month = 1;
-        }*/
     }
 
     public void Money()
@@ -59,11 +49,21 @@ public class Main_UI : MonoBehaviour
         {
             GameManager.Instance.stat.money_weeks += 4;
             
-            if ((GameManager.Instance.stat.CurrentWealth <= 100) && (GameManager.Instance.stat.CurrentFavorability <= 100))
+            if ((GameManager.Instance.stat.CurrentWealth <= 100) && (GameManager.Instance.stat.CurrentFavorability <= 100)) // 둘 다 100 이하면
             {
                 GameManager.Instance.stat.Current_Money += 200;
             }
-            else
+            else if ((GameManager.Instance.stat.CurrentWealth > 100) && (GameManager.Instance.stat.CurrentFavorability <= 100)) // 재력만 100 넘으면
+            {
+                GameManager.Instance.stat.Current_Money += 200;
+                GameManager.Instance.stat.Current_Money += (GameManager.Instance.stat.CurrentWealth - 100) * 10;
+            }
+            else if ((GameManager.Instance.stat.CurrentWealth <= 100) && (GameManager.Instance.stat.CurrentFavorability > 100)) // 호감도만 100 넘으면
+            {
+                GameManager.Instance.stat.Current_Money += 200;
+                GameManager.Instance.stat.Current_Money += (GameManager.Instance.stat.CurrentFavorability - 100) * 5;
+            }
+            else // 둘 다 100 초과이면
             {
                 GameManager.Instance.stat.Current_Money += 200;
                 GameManager.Instance.stat.Current_Money += (GameManager.Instance.stat.CurrentWealth - 100) * 10;

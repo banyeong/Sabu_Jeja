@@ -41,7 +41,7 @@ public class training : MonoBehaviour
     {
         Big.gameObject.SetActive(true);
 
-        Stat.text = "근력 " + GameManager.Instance.stat.CurrentMslStr + " / " + "도력 " + GameManager.Instance.stat.CurrentMoralStr + " / " + "재력 "
+        Stat.text = "현재 " + GameManager.Instance.stat.currentweeks + "주" + "\n"+ "근력 " + GameManager.Instance.stat.CurrentMslStr + " / " + "도력 " + GameManager.Instance.stat.CurrentMoralStr + " / " + "재력 "
                     + GameManager.Instance.stat.CurrentWealth + " / " + "호감도 " + GameManager.Instance.stat.CurrentFavorability;
     }
 
