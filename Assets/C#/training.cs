@@ -56,7 +56,7 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.currentweeks += 2;
 
         GameManager.Instance.stat.CurrentMslStr -= 7;
-        GameManager.Instance.stat.CurrentMoralStr += 18;
+        GameManager.Instance.stat.CurrentMoralStr += 21;
         GameManager.Instance.stat.CurrentFavorability += 7;
 
         TR_Finish();
@@ -66,7 +66,7 @@ public class training : MonoBehaviour
     {
         GameManager.Instance.stat.currentweeks += 3;
 
-        GameManager.Instance.stat.CurrentMslStr -= 12;
+        GameManager.Instance.stat.CurrentMslStr -= 7;
         GameManager.Instance.stat.CurrentMoralStr += 42;
         GameManager.Instance.stat.CurrentWealth -= 7;
 
@@ -77,7 +77,7 @@ public class training : MonoBehaviour
     {
         GameManager.Instance.stat.currentweeks += 4;
 
-        GameManager.Instance.stat.CurrentMslStr += 7;
+        GameManager.Instance.stat.CurrentMslStr += 14;
         GameManager.Instance.stat.CurrentMoralStr += 35;
         GameManager.Instance.stat.CurrentWealth -= 14;
 
@@ -88,7 +88,7 @@ public class training : MonoBehaviour
     {
         GameManager.Instance.stat.currentweeks += 1;
 
-        GameManager.Instance.stat.CurrentMoralStr += 20;
+        GameManager.Instance.stat.CurrentMoralStr += 21;
         GameManager.Instance.stat.CurrentFavorability -= 7;
 
         TR_Finish();
@@ -98,7 +98,7 @@ public class training : MonoBehaviour
     {
         GameManager.Instance.stat.currentweeks += 2;
 
-        GameManager.Instance.stat.CurrentMslStr += 18;
+        GameManager.Instance.stat.CurrentMslStr += 21;
         GameManager.Instance.stat.CurrentMoralStr -= 7;
         GameManager.Instance.stat.CurrentFavorability += 7;
 
@@ -110,7 +110,7 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.currentweeks += 3;
 
         GameManager.Instance.stat.CurrentMslStr += 42;
-        GameManager.Instance.stat.CurrentMoralStr -= 12;
+        GameManager.Instance.stat.CurrentMoralStr -= 7;
         GameManager.Instance.stat.CurrentWealth -= 7;
 
         TR_Finish();
@@ -121,7 +121,7 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.currentweeks += 4;
 
         GameManager.Instance.stat.CurrentMslStr += 35;
-        GameManager.Instance.stat.CurrentMoralStr += 7;
+        GameManager.Instance.stat.CurrentMoralStr += 14;
         GameManager.Instance.stat.CurrentWealth -= 14;
 
         TR_Finish();
@@ -132,7 +132,7 @@ public class training : MonoBehaviour
     {
         GameManager.Instance.stat.currentweeks += 1;
 
-        GameManager.Instance.stat.CurrentMslStr += 20;
+        GameManager.Instance.stat.CurrentMslStr += 21;
         GameManager.Instance.stat.CurrentFavorability -= 7;
 
         TR_Finish();
@@ -143,7 +143,7 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.currentweeks += 4;
 
         GameManager.Instance.stat.CurrentMoralStr -= 7;
-        GameManager.Instance.stat.CurrentWealth += 30;
+        GameManager.Instance.stat.CurrentWealth += 35;
 
         TR_Finish();
     }
@@ -153,7 +153,7 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.currentweeks += 4;
 
         GameManager.Instance.stat.CurrentMslStr -= 7;
-        GameManager.Instance.stat.CurrentWealth += 30;
+        GameManager.Instance.stat.CurrentWealth += 35;
 
         TR_Finish();
     }
@@ -164,7 +164,7 @@ public class training : MonoBehaviour
 
         GameManager.Instance.stat.CurrentMslStr -= 7;
         GameManager.Instance.stat.CurrentMoralStr += 7;
-        GameManager.Instance.stat.CurrentFavorability += 28;
+        GameManager.Instance.stat.CurrentFavorability += 21;
 
         TR_Finish();
     }
@@ -175,7 +175,7 @@ public class training : MonoBehaviour
 
         GameManager.Instance.stat.CurrentMslStr += 7;
         GameManager.Instance.stat.CurrentMoralStr += 7;
-        GameManager.Instance.stat.CurrentFavorability -= 14;
+        GameManager.Instance.stat.CurrentFavorability -= 7;
         GameManager.Instance.stat.CurrentWealth += 7;
 
         TR_Finish();
@@ -187,8 +187,8 @@ public class training : MonoBehaviour
 
         GameManager.Instance.stat.CurrentMslStr += 7;
         GameManager.Instance.stat.CurrentMoralStr += 7;
-        GameManager.Instance.stat.CurrentFavorability += 28;
-        GameManager.Instance.stat.CurrentWealth -= 14;
+        GameManager.Instance.stat.CurrentFavorability += 21;
+        GameManager.Instance.stat.CurrentWealth -= 7;
 
         TR_Finish();
     }
