@@ -45,6 +45,7 @@ public class story_2_2 : MonoBehaviour
                 }
                 else
                 {
+                    GameManager.Instance.stat.Story_Score += 20;
                     SceneManager.LoadScene(15);
                 }
             }

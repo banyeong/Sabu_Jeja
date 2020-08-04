@@ -44,7 +44,7 @@ public class Bad_End_3 : MonoBehaviour
                 else
                 {
                     //나중에 바꿔야 함
-                    SceneManager.LoadScene(15);
+                    SceneManager.LoadScene(0);
                 }
             }
         }

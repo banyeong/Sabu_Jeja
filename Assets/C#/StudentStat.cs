@@ -8,6 +8,8 @@ public class StudentStat
     public int money_weeks; //한 달마다 과외비
     public int weeks; // 12주(세 달)
     public int currentweeks; // 현재 주
+    public int Story_Score; // 스토리 점수
+    public int Gold_Score; // 골드 점수
 
 
     //현재 돈

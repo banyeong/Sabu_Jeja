@@ -31,7 +31,7 @@ public class training : MonoBehaviour
                             new Story() { index = 13, goalStat = new StudentStat(){_currentMslStr = 800, _currentMoralStr = 800, _currentWealth = -1, _cureentFavorability = 500}, priority = 200 }, //12
                             };
 
-    //알림창 요소
+    // 수련 알림창 요소
     [SerializeField] private GameObject Big;
     [SerializeField] private UnityEngine.UI.Button Back;
     [SerializeField] private SpriteRenderer Finish;
@@ -48,6 +48,17 @@ public class training : MonoBehaviour
     public void TR_HIDE() //완료창 뒤로가기 눌렀을 때 숨겨짐
     {
         Big.gameObject.SetActive(false);
+    }
+
+    //골드 점수 환산 함수
+    int goal_Gold_Score = 1000; //처음 기준 골드 점수
+    public void Gold_Change() //1000골드에 10골드 점수
+    {
+        if (GameManager.Instance.stat._current_money >= goal_Gold_Score)
+        {
+            goal_Gold_Score += 1000;
+            GameManager.Instance.stat.Gold_Score += 10;
+        }
     }
 
     #region training                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             #region trainig
@@ -198,7 +209,7 @@ public class training : MonoBehaviour
     {
         Story curStory = null; //로드할 스토리
 
-        if (GameManager.Instance.stat.currentweeks >= GameManager.Instance.stat.weeks) // 3개월 루프
+        if (GameManager.Instance.stat.currentweeks >= GameManager.Instance.stat.weeks && GameManager.Instance.stat.currentweeks < 144) // 3개월 루프
         {
             GameManager.Instance.stat.weeks += 12; // 늘어나야 되는 주
 
@@ -223,9 +234,41 @@ public class training : MonoBehaviour
             SceneManager.LoadScene(curStory.index);
         }
 
-        else if (GameManager.Instance.stat.currentweeks >= 144)
+        else if (GameManager.Instance.stat.currentweeks >= 144) // 3년이 지났을 때 엔딩
         {
-            //엔딩 함수
+            int Final_Gold = GameManager.Instance.stat.Gold_Score - GameManager.Instance.stat.Story_Score;
+            int Final_Story = GameManager.Instance.stat.Story_Score - GameManager.Instance.stat.Gold_Score;
+
+            if (GameManager.Instance.stat.Gold_Score > GameManager.Instance.stat.Story_Score) // 골드 점수가 스토리 점수보다 더 높다면
+            {
+                if (Final_Gold <= 300) //골드 점수와 스토리 점수의 차 300 이하 = 비호감도 엔딩 1
+                {
+                    SceneManager.LoadScene(16);
+                }
+                else if (Final_Gold > 300 && Final_Gold <= 500) // 300 초과 500 이하 = 비호감도 엔딩 2
+                {
+                    SceneManager.LoadScene(17);
+                }
+                else // 500초과 = 비호감도 엔딩 3
+                {
+                    SceneManager.LoadScene(18);
+                }
+            }
+            else
+            {
+                if (Final_Story <= 300) //300 이하 = 호감도 엔딩 1
+                {
+                    SceneManager.LoadScene(19);
+                }
+                else if (Final_Story > 300 && Final_Story <= 500) // 300 초과 500 이하 = 호감도 엔딩 2
+                {
+                    SceneManager.LoadScene(20);
+                }
+                else // 500 초과 = 호감도 엔딩 3
+                {
+                    SceneManager.LoadScene(21);
+                }
+            }
         }
     }
 }

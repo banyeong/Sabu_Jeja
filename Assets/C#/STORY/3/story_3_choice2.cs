@@ -60,6 +60,7 @@ public class story_3_choice2 : MonoBehaviour
                 }
                 else
                 {
+                    GameManager.Instance.stat.Story_Score += 30;
                     SceneManager.LoadScene(15);
                 }
             }

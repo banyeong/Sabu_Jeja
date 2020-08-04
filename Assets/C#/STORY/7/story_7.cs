@@ -46,6 +46,7 @@ public class story_7 : MonoBehaviour
                 }
                 else
                 {
+                    GameManager.Instance.stat.Story_Score += 80;
                     SceneManager.LoadScene(15);
                 }
             }

@@ -61,6 +61,7 @@ public class story_10_choice2 : MonoBehaviour
                 }
                 else
                 {
+                    GameManager.Instance.stat.Story_Score += 150;
                     SceneManager.LoadScene(15);
                 }
             }

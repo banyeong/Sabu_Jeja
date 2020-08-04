@@ -22,8 +22,8 @@ public class Main_UI : MonoBehaviour
     {
         one_weeks = GameManager.Instance.stat.currentweeks % 4;
         one_Month = GameManager.Instance.stat.currentweeks / 4;
-        one_Month = one_Month % 13;
-        one_Year = GameManager.Instance.stat.currentweeks / 52;
+        one_Month = one_Month % 12;
+        one_Year = GameManager.Instance.stat.currentweeks / 48;
 
         dateText = "";
 

@@ -53,4 +53,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: b2704ff0d1e2aff4a960462d6a337345
+  - enabled: 1
+    path: Assets/Scenes/End Story/Bad End_1.unity
+    guid: 2d3885f337c8d99468a27653b2ccee78
+  - enabled: 1
+    path: Assets/Scenes/End Story/Bad End_2.unity
+    guid: cf177d96ca4db4340b703e248ed01b68
+  - enabled: 1
+    path: Assets/Scenes/End Story/Bad End_3.unity
+    guid: fbc42e45cf948094a9a43329968494d4
+  - enabled: 1
+    path: Assets/Scenes/End Story/Happy End_1.unity
+    guid: 46aee89b775068c4e8f9d27e2fd3e497
+  - enabled: 1
+    path: Assets/Scenes/End Story/Happy End_2.unity
+    guid: 82113204fc30f634880ee0c0eb91d8c7
+  - enabled: 1
+    path: Assets/Scenes/End Story/Happy End_3.unity
+    guid: 4ac8f154525204a4c8f16022076522e9
   m_configObjects: {}
