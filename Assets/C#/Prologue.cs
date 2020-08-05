@@ -16,6 +16,7 @@ public class Prologue : MonoBehaviour
     public string[] fulltext;
     public int dialog_cnt;
     string currentText;
+    string AddText;
 
     //타이핑확인 변수
     public bool text_exit;
@@ -28,7 +29,6 @@ public class Prologue : MonoBehaviour
     {
         Get_Typing(dialog_cnt, fulltext);
     }
-
 
     //모든 텍스트 호출완료시 탈출
     void Update()
@@ -86,7 +86,7 @@ public class Prologue : MonoBehaviour
         else
         {
             //기존문구clear
-            currentText = "\n";
+            //currentText = "";
             //타이핑 시작
             for (int i = 0; i < _fullText[cnt].Length; i++)
             {
@@ -96,13 +96,14 @@ public class Prologue : MonoBehaviour
                     break;
                 }
                 //단어하나씩출력
-                currentText = _fullText[cnt].Substring(0, i + 1);
+                currentText = _fullText[cnt].Substring(0, i); //여기 검토
                 this.GetComponent<Text>().text = currentText;
                 yield return new WaitForSeconds(delay);
             }
+
             //탈출시 모든 문자출력
             Debug.Log("Typing 종료");
-            this.GetComponent<Text>().text = _fullText[cnt];
+            this.GetComponent<Text>().text = _fullText[cnt] + "\n";
             yield return new WaitForSeconds(Skip_delay);
 
             //스킵_지연후 종료
