@@ -12,20 +12,31 @@ public class Flower_Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public Image image;
 
     [SerializeField] private GameObject POP_UP; //커서 갖다댈 시 뜨는 설명 팝업창
+    [SerializeField] private Text NAME; // 아이템 이름
+    [SerializeField] private Text Explain; // 아이템 설명
 
     [SerializeField] private GameObject Buy_POP_UP; //아이템 구매 완료시 뜨는 팝업창
     [SerializeField] private Text IsBuy; //구매 완료? 실패?
     [SerializeField] private Text Buy_ex; //구매 완료시 정보 표시, 실패시 돈 부족합니다.
+
+    [SerializeField] private Text POPUP_Text;
 
     //입력 정보
     public int price; //아이템 가격
     public int Msl_Str; //근력
     public int Moral_Str; //도력
     public int Favorability; //호감도
+    //아이템 설명
+    public string Item_price;
+    public string Item_MslStr;
+    public string Item_MoralStr;
+    public string Item_Favorability;
 
     bool isEmpty = true;
     bool isBuy = false;
 
+    //상세설명 및 구매 관련 팝업창 
+    #region 
     //마우스 커서 갖다댔을 때 팝업창 뜨도록 하기
     public void OnPointerEnter(PointerEventData eventData)//IPointerEnterHandler
     {
@@ -45,7 +56,11 @@ public class Flower_Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public void Show_Pop_up(Vector3 position)
     {
         POP_UP.SetActive(true);
+        NAME.text = item.name;
+        Explain.text = Item_price + "\n" + Item_MslStr + "\n" + Item_MoralStr + "\n" + Item_Favorability;
+
         POP_UP.transform.position = position;
+        
     }
     public void Hide_Pop_up()
     {
@@ -120,7 +135,12 @@ public class Flower_Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             Fail_ShowBuy();
         }
     }
+    #endregion
 
+    private void Awake()
+    {
+        POPUP_Text = POP_UP.GetComponentInChildren<Text>();
+    }
     private void Update()
     {
 

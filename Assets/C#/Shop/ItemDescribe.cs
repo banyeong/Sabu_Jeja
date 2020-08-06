@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //꽃집 아이템 설명
-public interface Fw_Describe
+public interface ItemDescribe
 {
     string GetDescription();
 }
