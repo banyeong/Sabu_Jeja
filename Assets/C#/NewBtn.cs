@@ -13,9 +13,9 @@ public class NewBtn : MonoBehaviour
     {
         START.gameObject.SetActive(true);
     }
-    public void Go_YES() //메인 화면 불러오기
+    public void Go_YES() //프롤로그 불러오기
     {
-        SceneManager.LoadScene(15);
+        SceneManager.LoadScene(22);
     }
     public void Go_NO() //창 숨기기
     {

@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class Re_Prologue : MonoBehaviour
 {
+    [SerializeField] private Button Click;
+
     public Text tx;
     private string m_text = "세계에서 제일 이름난 도사인 주인공은" + "\n"
         + "방랑벽이 있어 한 곳에 머물지 않고" + "\n"
@@ -40,6 +42,7 @@ public class Re_Prologue : MonoBehaviour
 
         tx.text = m_text;
         text_full = true;
+        Click.gameObject.SetActive(true); //클릭 버튼 보임
     }
     // Update is called once per frame
     void Update()
