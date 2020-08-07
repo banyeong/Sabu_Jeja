@@ -74,4 +74,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prologue.unity
     guid: 37c8b5f3f1d9d3c44ba07d9e984af79a
+  - enabled: 1
+    path: Assets/Scenes/Go_Out.unity
+    guid: 540de372c39c77941bf62f400ee3594c
   m_configObjects: {}

@@ -13,4 +13,8 @@ public class LoadScene : MonoBehaviour
     {
         SceneManager.LoadScene(15);
     }
+    public void LoadGoOut()
+    {
+        SceneManager.LoadScene(23);
+    }
 }

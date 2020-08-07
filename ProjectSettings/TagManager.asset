@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Store
+  - Weapon Store
+  - Flower Store
+  - Gaurd Store
+  - Restaurant
   layers:
   - Default
   - TransparentFX
