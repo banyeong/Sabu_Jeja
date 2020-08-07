@@ -4,25 +4,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Flower_Shop : MonoBehaviour
+public class Shop : MonoBehaviour
 {
     public ItemDataBase itemDataBase;
     public Transform slotRoot;
 
-    private List<Flower_Slot> slots;
+    private List<Slot> slots;
 
     public System.Action<ItemProperty> onSlotClick;
 
     // Start is called before the first frame update
     void Start()
     {
-        slots = new List<Flower_Slot>();
+        slots = new List<Slot>();
 
         int slotCnt = slotRoot.childCount;
 
         for (int i = 0; i < slotCnt; i++)
         {
-            var slot = slotRoot.GetChild(i).GetComponent<Flower_Slot>();
+            var slot = slotRoot.GetChild(i).GetComponent<Slot>();
 
             if (i < itemDataBase.items.Count)
             {
@@ -44,7 +44,7 @@ public class Flower_Shop : MonoBehaviour
         
     }
 
-    public void OnClickSlot(Flower_Slot slot)
+    public void OnClickSlot(Slot slot)
     {
         if(onSlotClick != null)
         {

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Flower_Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [HideInInspector] //인스펙터에 안 나타나도록
     public ItemProperty item;
