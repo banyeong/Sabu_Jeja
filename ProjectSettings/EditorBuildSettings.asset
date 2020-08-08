@@ -77,4 +77,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Go_Out.unity
     guid: 540de372c39c77941bf62f400ee3594c
+  - enabled: 1
+    path: Assets/Scenes/FavorStory/Restaurant.unity
+    guid: 47bd4b861ca7ec446af8d22f150d01f0
+  - enabled: 1
+    path: Assets/Scenes/FavorStory/Restaurant_2.unity
+    guid: f9363c62073f20247a5caafbb96b3303
   m_configObjects: {}

@@ -1,12 +1,11 @@
-﻿/*using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class RT_OPEN : MonoBehaviour
 {
-    public GameObject Restaurant;
-
     public void RayShop()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -17,21 +16,30 @@ public class RT_OPEN : MonoBehaviour
         {
             if (hit2D.collider.CompareTag("Restaurant"))
             {
-                
+                RandomScene();
             }
         }
     }
-    
-    
-    public void DeActiveGAShop()
+
+    public void RandomScene()
     {
-        ActiveGAShop(false);
+        int x = Random.Range(0, 2);
+
+        switch(x)
+        {
+            case 0:
+                SceneManager.LoadScene(24);
+                break;
+            case 1:
+                SceneManager.LoadScene(25);
+                break;
+        }
     }
 
     //스타트 및 업데이트 함수
     private void Start()
     {
-        closeShop.onClick.AddListener(DeActiveGAShop);
+        //closeShop.onClick.AddListener(DeActiveGAShop);
     }
     private void Update()
     {
@@ -41,4 +49,3 @@ public class RT_OPEN : MonoBehaviour
         }
     }
 }
-*/

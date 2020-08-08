@@ -11,6 +11,7 @@ public class StudentStat
     public int Story_Score; // 스토리 점수
     public int Gold_Score; // 골드 점수
 
+    public int RT_weeks; //레스토랑
 
     //현재 돈
     public int _current_money;

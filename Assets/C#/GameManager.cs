@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         stat = new StudentStat() { _current_money = 20000, money_weeks = 4, weeks = 12,
-            currentweeks = 1, _currentMslStr = 100, _currentMoralStr = 100, _currentWealth = 100, _cureentFavorability = 100, Story_Score = 0, Gold_Score = 0 };
+            currentweeks = 1, _currentMslStr = 100, _currentMoralStr = 100, _currentWealth = 100,
+            _cureentFavorability = 100, Story_Score = 0, Gold_Score = 0,
+            RT_weeks = 0 };
     }
 }
