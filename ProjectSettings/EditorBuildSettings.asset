@@ -83,4 +83,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FavorStory/Restaurant_2.unity
     guid: f9363c62073f20247a5caafbb96b3303
+  - enabled: 1
+    path: Assets/Scenes/FavorStory/Mountain.unity
+    guid: 9ef9add78df79b047b8219a3300b816d
+  - enabled: 1
+    path: Assets/Scenes/FavorStory/Mountain2.unity
+    guid: 278f7ffa1f609f6448fe5397baf3a7bb
+  - enabled: 1
+    path: Assets/Scenes/FavorStory/Lake.unity
+    guid: 980b1a0ff4c31d64ca12931dc4822770
+  - enabled: 1
+    path: Assets/Scenes/FavorStory/Lake2.unity
+    guid: df2847c040948dd45858eaccd0788efc
+  - enabled: 1
+    path: Assets/Scenes/FavorStory/Lake3.unity
+    guid: aa310351ec76cd14c81ea2960fe0ca96
   m_configObjects: {}

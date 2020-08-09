@@ -8,6 +8,8 @@ TagManager:
   - Flower Store
   - Gaurd Store
   - Restaurant
+  - Mountain
+  - Lake
   layers:
   - Default
   - TransparentFX
