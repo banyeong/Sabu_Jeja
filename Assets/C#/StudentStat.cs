@@ -11,7 +11,19 @@ public class StudentStat
     public int Story_Score; // 스토리 점수
     public int Gold_Score; // 골드 점수
 
-    public int RT_weeks; //레스토랑
+    //호감도 이벤트 열기 위해
+
+    //음식점
+    public int RT_Open_weeks;
+    public bool isRTOpen;
+
+    //산
+    public int MT_Open_weeks;
+    public bool isMTOpen;
+
+    //호수
+    public int LK_Open_weeks;
+    public bool isLKOpen;
 
     //현재 돈
     public int _current_money;

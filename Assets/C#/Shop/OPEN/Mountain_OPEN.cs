@@ -15,7 +15,25 @@ public class Mountain_OPEN : MonoBehaviour
         {
             if (hit2D.collider.CompareTag("Mountain"))
             {
-                RandomScene();
+                if(GameManager.Instance.stat.MT_Open_weeks == 1)
+                {
+                    GameManager.Instance.stat.isMTOpen = true;
+                    GameManager.Instance.stat.MT_Open_weeks += 1;
+                    RandomScene();
+                }
+                else
+                {
+                    if (GameManager.Instance.stat.MT_Open_weeks >= 13) // 3개월 이상이 됐을 때
+                    {
+                        GameManager.Instance.stat.isMTOpen = false;
+                        GameManager.Instance.stat.MT_Open_weeks = 1;
+                    }
+                    else
+                    {
+                        Debug.Log("3개월 후에 다시 갈 수 있습니다");
+                        Debug.Log(GameManager.Instance.stat.MT_Open_weeks);
+                    }
+                }
             }
         }
     }

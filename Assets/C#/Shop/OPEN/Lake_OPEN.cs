@@ -15,7 +15,25 @@ public class Lake_OPEN : MonoBehaviour
         {
             if (hit2D.collider.CompareTag("Lake"))
             {
-                RandomScene();
+                if (GameManager.Instance.stat.LK_Open_weeks == 1)
+                {
+                    GameManager.Instance.stat.isLKOpen = true;
+                    GameManager.Instance.stat.LK_Open_weeks += 1;
+                    RandomScene();
+                }
+                else // 최초가 아닌데 3개월 후도 아니라면
+                {
+                    if (GameManager.Instance.stat.LK_Open_weeks >= 13) // 3개월 이상이 됐을 때
+                    {
+                        GameManager.Instance.stat.isLKOpen = false;
+                        GameManager.Instance.stat.LK_Open_weeks = 1;
+                    }
+                    else
+                    {
+                        Debug.Log("3개월 후에 다시 갈 수 있습니다");
+                        Debug.Log(GameManager.Instance.stat.LK_Open_weeks);
+                    }
+                }
             }
         }
     }

@@ -24,6 +24,6 @@ public class GameManager : MonoBehaviour
         stat = new StudentStat() { _current_money = 20000, money_weeks = 4, weeks = 12,
             currentweeks = 1, _currentMslStr = 100, _currentMoralStr = 100, _currentWealth = 100,
             _cureentFavorability = 100, Story_Score = 0, Gold_Score = 0,
-            RT_weeks = 0 };
+            RT_Open_weeks = 1, isRTOpen = false, MT_Open_weeks = 1, isMTOpen = false, LK_Open_weeks =1, isLKOpen = false};
     }
 }

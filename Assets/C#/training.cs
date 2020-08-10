@@ -69,6 +69,20 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMslStr -= 7;
         GameManager.Instance.stat.CurrentMoralStr += 21;
         GameManager.Instance.stat.CurrentFavorability += 7;
+        
+        // 호감도 장소가 오픈됐을 때
+        if(GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 2;
+        }
+        if(GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 2;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 2;
+        }
 
         TR_Finish();
     }
@@ -81,6 +95,19 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMoralStr += 42;
         GameManager.Instance.stat.CurrentWealth -= 7;
 
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 3;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 3;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 3;
+        }
+
         TR_Finish();
     }
 
@@ -92,6 +119,19 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMoralStr += 35;
         GameManager.Instance.stat.CurrentWealth -= 14;
 
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 4;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 4;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 4;
+        }
+
         TR_Finish();
     }
 
@@ -101,6 +141,19 @@ public class training : MonoBehaviour
 
         GameManager.Instance.stat.CurrentMoralStr += 21;
         GameManager.Instance.stat.CurrentFavorability -= 7;
+
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 1;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 1;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 1;
+        }
 
         TR_Finish();
     }
@@ -113,6 +166,19 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMoralStr -= 7;
         GameManager.Instance.stat.CurrentFavorability += 7;
 
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 2;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 2;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 2;
+        }
+
         TR_Finish();
     }
 
@@ -123,6 +189,19 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMslStr += 42;
         GameManager.Instance.stat.CurrentMoralStr -= 7;
         GameManager.Instance.stat.CurrentWealth -= 7;
+
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 3;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 3;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 3;
+        }
 
         TR_Finish();
     }
@@ -135,6 +214,19 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMoralStr += 14;
         GameManager.Instance.stat.CurrentWealth -= 14;
 
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 4;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 4;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 4;
+        }
+
         TR_Finish();
     }
 
@@ -146,6 +238,19 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMslStr += 21;
         GameManager.Instance.stat.CurrentFavorability -= 7;
 
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 1;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 1;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 1;
+        }
+
         TR_Finish();
     }
 
@@ -155,6 +260,19 @@ public class training : MonoBehaviour
 
         GameManager.Instance.stat.CurrentMoralStr -= 7;
         GameManager.Instance.stat.CurrentWealth += 35;
+
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 4;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 4;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 4;
+        }
 
         TR_Finish();
     }
@@ -166,6 +284,19 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMslStr -= 7;
         GameManager.Instance.stat.CurrentWealth += 35;
 
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 4;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 4;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 4;
+        }
+
         TR_Finish();
     }
 
@@ -176,6 +307,19 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMslStr -= 7;
         GameManager.Instance.stat.CurrentMoralStr += 7;
         GameManager.Instance.stat.CurrentFavorability += 21;
+
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 2;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 2;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 2;
+        }
 
         TR_Finish();
     }
@@ -189,6 +333,19 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentFavorability -= 7;
         GameManager.Instance.stat.CurrentWealth += 7;
 
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 1;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 1;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 1;
+        }
+
         TR_Finish();
     }
 
@@ -200,6 +357,19 @@ public class training : MonoBehaviour
         GameManager.Instance.stat.CurrentMoralStr += 7;
         GameManager.Instance.stat.CurrentFavorability += 21;
         GameManager.Instance.stat.CurrentWealth -= 7;
+
+        if (GameManager.Instance.stat.isRTOpen == true)
+        {
+            GameManager.Instance.stat.RT_Open_weeks += 3;
+        }
+        if (GameManager.Instance.stat.isMTOpen == true)
+        {
+            GameManager.Instance.stat.MT_Open_weeks += 3;
+        }
+        if (GameManager.Instance.stat.isLKOpen == true)
+        {
+            GameManager.Instance.stat.LK_Open_weeks += 3;
+        }
 
         TR_Finish();
     }

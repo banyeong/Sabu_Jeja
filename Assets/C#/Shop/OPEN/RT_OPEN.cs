@@ -6,6 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class RT_OPEN : MonoBehaviour
 {
+    //3개월 후에 갈 수 있음을 알려주기 위한 알림창
+    [SerializeField] private SpriteRenderer UI;
+    [SerializeField] private Text txt;
+
+    private void ShowUI()
+    {
+        UI.gameObject.SetActive(true);
+        txt.text = "3개월이 지난 후 다시 갈 수 있습니다.\n 남은 주 : " + (13 - GameManager.Instance.stat.RT_Open_weeks);
+    }
+
     public void RayShop()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -14,9 +24,26 @@ public class RT_OPEN : MonoBehaviour
 
         if (hit2D.collider != null)
         {
-            if (hit2D.collider.CompareTag("Restaurant"))
+            if (hit2D.collider.CompareTag("Restaurant")) // 음식점에 닿았을 때
             {
-                RandomScene();
+                if (GameManager.Instance.stat.RT_Open_weeks == 1) //최초 or 이벤트를 본지 3개월 후라면
+                {
+                    GameManager.Instance.stat.isRTOpen = true;
+                    GameManager.Instance.stat.RT_Open_weeks += 1;
+                    RandomScene(); // 이벤트 호출
+                }
+                else // 최초가 아닌데 3개월 후도 아니라면
+                {
+                    if (GameManager.Instance.stat.RT_Open_weeks >= 13) // 3개월 이상이 됐을 때
+                    {
+                        GameManager.Instance.stat.isRTOpen = false;
+                        GameManager.Instance.stat.RT_Open_weeks = 1;
+                    }
+                    else
+                    {
+                        ShowUI();
+                    }
+                }
             }
         }
     }
