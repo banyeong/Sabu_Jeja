@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,9 +22,48 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        stat = new StudentStat() { _current_money = 20000, money_weeks = 4, weeks = 12,
+        stat = new StudentStat() {_current_money = 0, money_weeks = 4, weeks = 12,
             currentweeks = 1, _currentMslStr = 100, _currentMoralStr = 100, _currentWealth = 100,
             _cureentFavorability = 100, Story_Score = 0, Gold_Score = 0,
             RT_Open_weeks = 1, isRTOpen = false, MT_Open_weeks = 1, isMTOpen = false, LK_Open_weeks =1, isLKOpen = false};
+    }
+
+    public void GameSave()
+    {
+        //주, 능력치 등등...
+        PlayerPrefs.SetInt("Current Weeks", GameManager.Instance.stat.currentweeks);
+        PlayerPrefs.SetInt("Current MslStr", GameManager.Instance.stat.CurrentMslStr);
+        PlayerPrefs.SetInt("Current MoralStr", GameManager.Instance.stat.CurrentMoralStr);
+        PlayerPrefs.SetInt("Current Wealth", GameManager.Instance.stat.CurrentWealth);
+        PlayerPrefs.SetInt("Current Favorability", GameManager.Instance.stat.CurrentFavorability);
+
+        PlayerPrefs.SetInt("RT_Open_weeks", GameManager.Instance.stat.RT_Open_weeks);
+        PlayerPrefs.SetInt("MT_Open_weeks", GameManager.Instance.stat.MT_Open_weeks);
+        PlayerPrefs.SetInt("LK_Open_weeks", GameManager.Instance.stat.LK_Open_weeks);
+
+        PlayerPrefs.Save();
+    }
+    public void GameLoad()
+    {
+        SceneManager.LoadScene(15);
+        int Weeks = PlayerPrefs.GetInt("Current Weeks");
+        int MslStr = PlayerPrefs.GetInt("Curren MslStr");
+        int MoralStr = PlayerPrefs.GetInt("Current MoralStr");
+        int Wealth = PlayerPrefs.GetInt("Current Wealth");
+        int Favorability = PlayerPrefs.GetInt("Current Favorability");
+
+        int RT = PlayerPrefs.GetInt("RT_Open_weeks");
+        int MT = PlayerPrefs.GetInt("MT_Open_weeks");
+        int LK = PlayerPrefs.GetInt("LK_Open_weeks");
+
+        GameManager.Instance.stat.currentweeks = Weeks;
+        GameManager.Instance.stat.CurrentMslStr = MslStr;
+        GameManager.Instance.stat.CurrentMoralStr = MoralStr;
+        GameManager.Instance.stat.CurrentWealth = Wealth;
+        GameManager.Instance.stat.CurrentFavorability = Favorability;
+
+        GameManager.Instance.stat.RT_Open_weeks = RT;
+        GameManager.Instance.stat.MT_Open_weeks = MT;
+        GameManager.Instance.stat.LK_Open_weeks = LK;
     }
 }

@@ -7,6 +7,34 @@ public class FW_Shop_Open : MonoBehaviour
 {
     public GameObject Flower_Shop;
     public Button closeShop;
+    public Button Back;
+
+    //박스 콜라이더
+    public BoxCollider2D Flower;
+    public BoxCollider2D Weapon;
+    public BoxCollider2D Gaurd;
+    public BoxCollider2D MT;
+    public BoxCollider2D RT;
+    public BoxCollider2D LK;
+
+    private void HideCollider() //콜라이더 비활성화
+    {
+        Flower.enabled = false;
+        Weapon.enabled = false;
+        Gaurd.enabled = false;
+        MT.enabled = false;
+        RT.enabled = false;
+        LK.enabled = false;
+    }
+    private void ShowCollider() //콜라이더 활성화
+    {
+        Flower.enabled = true;
+        Weapon.enabled = true;
+        Gaurd.enabled = true;
+        MT.enabled = true;
+        RT.enabled = true;
+        LK.enabled = true;
+    }
 
     public void RayShop()
     {
@@ -19,6 +47,7 @@ public class FW_Shop_Open : MonoBehaviour
             if(hit2D.collider.CompareTag("Flower Store"))
             {
                 ActiveFWShop(true);
+                HideCollider();
             }
         }
     }
@@ -26,10 +55,13 @@ public class FW_Shop_Open : MonoBehaviour
     public void ActiveFWShop(bool isOpen)
     {
         Flower_Shop.SetActive(isOpen);
+        Back.gameObject.SetActive(false);
     }
     public void DeActiveFWShop()
     {
         ActiveFWShop(false);
+        ShowCollider();
+        Back.gameObject.SetActive(true);
     }
 
     //스타트 및 업데이트 함수
