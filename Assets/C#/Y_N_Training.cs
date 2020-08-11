@@ -13,8 +13,9 @@ public class Y_N_Training : MonoBehaviour
     [SerializeField] private Text TRname;
     [SerializeField] private Text Explain;
 
-    [SerializeField] private UnityEngine.UI.Button Yes;
-    [SerializeField] private UnityEngine.UI.Button No;
+    [SerializeField] private Button Yes;
+    [SerializeField] private Button No;
+    [SerializeField] private GameObject Panel;
 
     [SerializeField] private Dialogue[] trname;
     [SerializeField] private Dialogue[] explain;
@@ -24,6 +25,7 @@ public class Y_N_Training : MonoBehaviour
     public void showPOPUP()
     {
         Big.gameObject.SetActive(true);
+        Panel.gameObject.SetActive(true);
         TRname.text = trname[count].dialogue;
         Explain.text = explain[count].dialogue;
     }
@@ -31,5 +33,6 @@ public class Y_N_Training : MonoBehaviour
     public void hidePOPUP()
     {
         Big.gameObject.SetActive(false);
+        Panel.gameObject.SetActive(false);
     }
 }

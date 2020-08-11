@@ -33,9 +33,10 @@ public class training : MonoBehaviour
 
     // 수련 알림창 요소
     [SerializeField] private GameObject Big;
-    [SerializeField] private UnityEngine.UI.Button Back;
+    [SerializeField] private Button Back;
     [SerializeField] private SpriteRenderer Finish;
     [SerializeField] private Text Stat;
+    [SerializeField] private GameObject Panel;
 
     public void TR_Finish()//수련 완료 했을 때 뜨는 알림창 함수
     {
@@ -48,6 +49,7 @@ public class training : MonoBehaviour
     public void TR_HIDE() //완료창 뒤로가기 눌렀을 때 숨겨짐
     {
         Big.gameObject.SetActive(false);
+        Panel.gameObject.SetActive(false);
     }
 
     //골드 점수 환산 함수

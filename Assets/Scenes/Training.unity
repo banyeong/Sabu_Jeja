@@ -517,6 +517,7 @@ MonoBehaviour:
   Explain: {fileID: 374804357}
   Yes: {fileID: 914243369}
   No: {fileID: 1641044607}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uC545\uAE30 \uC5F0\uC8FC"
     cg: {fileID: 0}
@@ -678,6 +679,7 @@ MonoBehaviour:
   Explain: {fileID: 1109971890}
   Yes: {fileID: 367841753}
   No: {fileID: 417584348}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uADF8\uB9BC \uADF8\uB9AC\uAE30"
     cg: {fileID: 0}
@@ -839,6 +841,7 @@ MonoBehaviour:
   Explain: {fileID: 1724321790}
   Yes: {fileID: 630732102}
   No: {fileID: 840334739}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uCC3D\uC220 \uB2E8\uB828"
     cg: {fileID: 0}
@@ -2229,6 +2232,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &329239078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2247,6 +2251,7 @@ MonoBehaviour:
   Explain: {fileID: 2082426425}
   Yes: {fileID: 329239081}
   No: {fileID: 2062877977}
+  Panel: {fileID: 0}
   trname:
   - dialogue: 
     cg: {fileID: 0}
@@ -2583,6 +2588,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &367841750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2601,6 +2607,7 @@ MonoBehaviour:
   Explain: {fileID: 1109971890}
   Yes: {fileID: 367841753}
   No: {fileID: 417584348}
+  Panel: {fileID: 0}
   trname:
   - dialogue: 
     cg: {fileID: 0}
@@ -2859,6 +2866,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &384147455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2877,6 +2885,7 @@ MonoBehaviour:
   Explain: {fileID: 398428843}
   Yes: {fileID: 384147458}
   No: {fileID: 1493144441}
+  Panel: {fileID: 0}
   trname: []
   explain: []
 --- !u!114 &384147456
@@ -3378,6 +3387,7 @@ MonoBehaviour:
   Explain: {fileID: 1109971890}
   Yes: {fileID: 367841753}
   No: {fileID: 417584348}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &417584350
@@ -4152,6 +4162,7 @@ MonoBehaviour:
   Explain: {fileID: 25904460}
   Yes: {fileID: 981494111}
   No: {fileID: 502790609}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &502790611
@@ -4302,6 +4313,7 @@ MonoBehaviour:
   Explain: {fileID: 733449409}
   Yes: {fileID: 1258082265}
   No: {fileID: 523334912}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &523334914
@@ -4541,6 +4553,7 @@ MonoBehaviour:
   Explain: {fileID: 259703115}
   Yes: {fileID: 1728284938}
   No: {fileID: 601660453}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!1 &630732096
@@ -4599,6 +4612,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &630732099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4617,6 +4631,7 @@ MonoBehaviour:
   Explain: {fileID: 1724321790}
   Yes: {fileID: 630732102}
   No: {fileID: 840334739}
+  Panel: {fileID: 0}
   trname: []
   explain: []
 --- !u!114 &630732100
@@ -4928,6 +4943,7 @@ RectTransform:
   - {fileID: 1930548087}
   - {fileID: 974457674}
   - {fileID: 137610956}
+  - {fileID: 1090032041}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5091,6 +5107,7 @@ MonoBehaviour:
   Explain: {fileID: 150931490}
   Yes: {fileID: 1256873272}
   No: {fileID: 1341642340}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uC0C1\uC220 \uACF5\uBD80"
     cg: {fileID: 0}
@@ -5250,6 +5267,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 1090032040}
 --- !u!114 &726649220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5976,6 +5994,7 @@ MonoBehaviour:
   Explain: {fileID: 1724321790}
   Yes: {fileID: 630732102}
   No: {fileID: 840334739}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &840334741
@@ -6090,6 +6109,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &841386142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6108,6 +6128,7 @@ MonoBehaviour:
   Explain: {fileID: 346581518}
   Yes: {fileID: 841386145}
   No: {fileID: 1809867777}
+  Panel: {fileID: 0}
   trname: []
   explain: []
 --- !u!114 &841386143
@@ -6316,6 +6337,7 @@ MonoBehaviour:
   Explain: {fileID: 1480987362}
   Yes: {fileID: 2071612697}
   No: {fileID: 851126131}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &851126133
@@ -6690,6 +6712,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &914243366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6708,6 +6731,7 @@ MonoBehaviour:
   Explain: {fileID: 374804357}
   Yes: {fileID: 914243369}
   No: {fileID: 1641044607}
+  Panel: {fileID: 0}
   trname:
   - dialogue: 
     cg: {fileID: 0}
@@ -7032,6 +7056,7 @@ MonoBehaviour:
   Explain: {fileID: 1111096535}
   Yes: {fileID: 1423857309}
   No: {fileID: 1678863230}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uCCB4\uC220 \uB2E8\uB828"
     cg: {fileID: 0}
@@ -7331,6 +7356,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &981494108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7349,6 +7375,7 @@ MonoBehaviour:
   Explain: {fileID: 25904460}
   Yes: {fileID: 981494111}
   No: {fileID: 502790609}
+  Panel: {fileID: 0}
   trname: []
   explain: []
 --- !u!114 &981494109
@@ -7665,6 +7692,80 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1090032040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1090032041}
+  - component: {fileID: 1090032043}
+  - component: {fileID: 1090032042}
+  m_Layer: 5
+  m_Name: "\uBC84\uD2BC \uD074\uB9AD \uBB34\uC2DC \uD328\uB110"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1090032041
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090032040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 665364577}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1090032042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090032040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.003921569}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1090032043
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090032040}
+  m_CullTransparentMesh: 0
 --- !u!1 &1109971887
 GameObject:
   m_ObjectHideFlags: 0
@@ -8146,6 +8247,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &1256873271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8164,6 +8266,7 @@ MonoBehaviour:
   Explain: {fileID: 150931490}
   Yes: {fileID: 1256873272}
   No: {fileID: 1341642340}
+  Panel: {fileID: 0}
   trname:
   - dialogue: 
     cg: {fileID: 0}
@@ -8344,6 +8447,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &1258082262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8362,6 +8466,7 @@ MonoBehaviour:
   Explain: {fileID: 733449409}
   Yes: {fileID: 1258082265}
   No: {fileID: 523334912}
+  Panel: {fileID: 0}
   trname: []
   explain: []
 --- !u!114 &1258082263
@@ -8827,6 +8932,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &1338596702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8845,6 +8951,7 @@ MonoBehaviour:
   Explain: {fileID: 1439146422}
   Yes: {fileID: 1338596705}
   No: {fileID: 2085997380}
+  Panel: {fileID: 0}
   trname: []
   explain: []
 --- !u!114 &1338596703
@@ -9053,6 +9160,7 @@ MonoBehaviour:
   Explain: {fileID: 150931490}
   Yes: {fileID: 1256873272}
   No: {fileID: 1341642340}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &1341642342
@@ -9465,6 +9573,7 @@ MonoBehaviour:
   Explain: {fileID: 1480987362}
   Yes: {fileID: 2071612697}
   No: {fileID: 851126131}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uC2DC \uC4F0\uAE30"
     cg: {fileID: 0}
@@ -9625,6 +9734,7 @@ MonoBehaviour:
   Explain: {fileID: 398428843}
   Yes: {fileID: 384147458}
   No: {fileID: 1493144441}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uB3C4\uB825 \uC815\uC81C"
     cg: {fileID: 0}
@@ -9784,6 +9894,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &1423857306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9802,6 +9913,7 @@ MonoBehaviour:
   Explain: {fileID: 259703115}
   Yes: {fileID: 1423857309}
   No: {fileID: 1678863230}
+  Panel: {fileID: 0}
   trname: []
   explain: []
 --- !u!114 &1423857307
@@ -10444,6 +10556,7 @@ MonoBehaviour:
   Explain: {fileID: 398428843}
   Yes: {fileID: 384147458}
   No: {fileID: 1493144441}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &1493144443
@@ -10938,6 +11051,7 @@ MonoBehaviour:
   Explain: {fileID: 374804357}
   Yes: {fileID: 914243369}
   No: {fileID: 1641044607}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &1641044609
@@ -11053,6 +11167,7 @@ MonoBehaviour:
   Explain: {fileID: 1439146422}
   Yes: {fileID: 1338596705}
   No: {fileID: 2085997380}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uC6B4\uAE30\uC870\uC2DD"
     cg: {fileID: 0}
@@ -11249,6 +11364,7 @@ MonoBehaviour:
   Explain: {fileID: 1111096535}
   Yes: {fileID: 1423857309}
   No: {fileID: 1678863230}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &1678863232
@@ -11555,6 +11671,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &1728284940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11573,6 +11690,7 @@ MonoBehaviour:
   Explain: {fileID: 259703115}
   Yes: {fileID: 1728284938}
   No: {fileID: 601660453}
+  Panel: {fileID: 0}
   trname: []
   explain: []
 --- !u!1 &1755142198
@@ -11632,6 +11750,7 @@ MonoBehaviour:
   Explain: {fileID: 346581518}
   Yes: {fileID: 841386145}
   No: {fileID: 1809867777}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uB3C4\uC220 \uAC1C\uBC1C"
     cg: {fileID: 0}
@@ -12036,6 +12155,7 @@ MonoBehaviour:
   Explain: {fileID: 2082426425}
   Yes: {fileID: 329239081}
   No: {fileID: 2062877977}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uB3C4\uC11C \uC77D\uAE30"
     cg: {fileID: 0}
@@ -12196,6 +12316,7 @@ MonoBehaviour:
   Explain: {fileID: 25904460}
   Yes: {fileID: 981494111}
   No: {fileID: 502790609}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uB3C4\uC220 \uC5F0\uB9C8"
     cg: {fileID: 0}
@@ -12392,6 +12513,7 @@ MonoBehaviour:
   Explain: {fileID: 346581518}
   Yes: {fileID: 841386145}
   No: {fileID: 1809867777}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &1809867779
@@ -13369,6 +13491,7 @@ MonoBehaviour:
   Explain: {fileID: 259703115}
   Yes: {fileID: 1728284938}
   No: {fileID: 601660453}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uBD09\uC220 \uB2E8\uB828"
     cg: {fileID: 0}
@@ -13438,6 +13561,7 @@ MonoBehaviour:
   Explain: {fileID: 733449409}
   Yes: {fileID: 1258082265}
   No: {fileID: 523334912}
+  Panel: {fileID: 1090032040}
   trname:
   - dialogue: "\uAC80\uC220 \uB2E8\uB828"
     cg: {fileID: 0}
@@ -13634,6 +13758,7 @@ MonoBehaviour:
   Explain: {fileID: 2082426425}
   Yes: {fileID: 329239081}
   No: {fileID: 2062877977}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &2062877979
@@ -13881,6 +14006,7 @@ MonoBehaviour:
   Back: {fileID: 726649220}
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
+  Panel: {fileID: 0}
 --- !u!114 &2071612694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13899,6 +14025,7 @@ MonoBehaviour:
   Explain: {fileID: 1480987362}
   Yes: {fileID: 2071612697}
   No: {fileID: 851126131}
+  Panel: {fileID: 0}
   trname:
   - dialogue: 
     cg: {fileID: 0}
@@ -14308,6 +14435,7 @@ MonoBehaviour:
   Explain: {fileID: 1439146422}
   Yes: {fileID: 1338596705}
   No: {fileID: 2085997380}
+  Panel: {fileID: 1090032040}
   trname: []
   explain: []
 --- !u!114 &2085997382
