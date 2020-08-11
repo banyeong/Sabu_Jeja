@@ -13,6 +13,7 @@ public class FailLoad : MonoBehaviour
         FailPopUp.gameObject.SetActive(true);
         FailText.gameObject.SetActive(true);
     }
+
     public void HideFailLoad()
     {
         FailPopUp.gameObject.SetActive(false);
