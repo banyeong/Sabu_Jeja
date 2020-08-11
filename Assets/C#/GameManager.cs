@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     {
         //주, 능력치 등등...
         PlayerPrefs.SetInt("Current Money", GameManager.Instance.stat.Current_Money);
+        PlayerPrefs.SetInt("Weeks", GameManager.Instance.stat.weeks);
         PlayerPrefs.SetInt("Current Weeks", GameManager.Instance.stat.currentweeks);
         PlayerPrefs.SetInt("Money Weeks", GameManager.Instance.stat.money_weeks);
         PlayerPrefs.SetInt("Current MslStr", GameManager.Instance.stat.CurrentMslStr);
@@ -54,7 +55,8 @@ public class GameManager : MonoBehaviour
         }
         SceneManager.LoadScene(15);
         int Money = PlayerPrefs.GetInt("Current Money");
-        int Weeks = PlayerPrefs.GetInt("Current Weeks");
+        int Weeks = PlayerPrefs.GetInt("Weeks");
+        int CurrentWeeks = PlayerPrefs.GetInt("Current Weeks");
         int MoneyWeeks = PlayerPrefs.GetInt("Money Weeks");
         int MslStr = PlayerPrefs.GetInt("Curren MslStr");
         int MoralStr = PlayerPrefs.GetInt("Current MoralStr");
@@ -66,7 +68,8 @@ public class GameManager : MonoBehaviour
         int LK = PlayerPrefs.GetInt("LK_Open_weeks");
 
         GameManager.Instance.stat.Current_Money = Money;
-        GameManager.Instance.stat.currentweeks = Weeks;
+        GameManager.Instance.stat.weeks = Weeks;
+        GameManager.Instance.stat.currentweeks = CurrentWeeks;
         GameManager.Instance.stat.money_weeks = MoneyWeeks;
         GameManager.Instance.stat.CurrentMslStr = MslStr;
         GameManager.Instance.stat.CurrentMoralStr = MoralStr;

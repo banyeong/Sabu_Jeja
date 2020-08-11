@@ -75,6 +75,7 @@ public class Main_UI : MonoBehaviour
     private void Start()
     {
         dateText = "";
+        Debug.Log(GameManager.Instance.stat.weeks);
     }
 
     void Update()

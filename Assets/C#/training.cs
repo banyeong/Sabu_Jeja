@@ -381,7 +381,7 @@ public class training : MonoBehaviour
     {
         Story curStory = null; //로드할 스토리
 
-        if (GameManager.Instance.stat.currentweeks >= GameManager.Instance.stat.weeks && GameManager.Instance.stat.currentweeks < 144) // 3개월 루프
+        if ((GameManager.Instance.stat.currentweeks >= GameManager.Instance.stat.weeks) && (GameManager.Instance.stat.currentweeks < 144)) // 3개월 루프
         {
             GameManager.Instance.stat.weeks += 12; // 늘어나야 되는 주
 

@@ -10,6 +10,7 @@ TagManager:
   - Restaurant
   - Mountain
   - Lake
+  - Favor
   layers:
   - Default
   - TransparentFX
