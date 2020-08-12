@@ -18,6 +18,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     [SerializeField] private GameObject Buy_POP_UP; //아이템 구매 완료시 뜨는 팝업창
     [SerializeField] private Text IsBuy; //구매 완료? 실패?
     [SerializeField] private Text Buy_ex; //구매 완료시 정보 표시, 실패시 돈 부족합니다.
+    [SerializeField] private GameObject limitBTN; //슬롯 클릭 제한
 
     [SerializeField] private Text POPUP_Text;
 
@@ -121,6 +122,7 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void NoBuyItem() // 팝업 사라짐
     {
         Buy_POP_UP.gameObject.SetActive(false);
+        limitBTN.gameObject.SetActive(false);
     }
 
     //버튼 적용 함수
@@ -129,10 +131,12 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         if (GameManager.Instance.stat.Current_Money >= price)
         {
             BuyItem();
+            limitBTN.gameObject.SetActive(true);
         }
         else
         {
             Fail_ShowBuy();
+            limitBTN.gameObject.SetActive(true);
         }
     }
     #endregion
