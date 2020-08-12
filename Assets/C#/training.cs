@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using UnityEditor.U2D.Common;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -60,6 +61,29 @@ public class training : MonoBehaviour
         {
             goal_Gold_Score += 1000;
             GameManager.Instance.stat.Gold_Score += 10;
+        }
+    }
+    
+    //애니메이터 및 수련
+    Animator animator;
+    public GameObject MslStr_Ani;
+    public bool isClick_Msl = false;
+
+    float timer;
+    public float waithingTime;
+    private void Msl_time()
+    {
+        if (isClick_Msl == true) //근력 수련 시작 했는가?
+        {
+            timer += Time.deltaTime;
+            Debug.Log(timer);
+            if (timer > waithingTime)
+            {
+                MslStr_Ani.gameObject.SetActive(false);
+                TR_Finish();
+                isClick_Msl = false;
+            }
+            timer = 0;
         }
     }
 
@@ -181,7 +205,9 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 2;
         }
 
-        TR_Finish();
+        isClick_Msl = true;
+        MslStr_Ani.gameObject.SetActive(true);
+        Msl_time();
     }
 
     public void SWORDSMS() // 검술단련
@@ -442,5 +468,16 @@ public class training : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void Start()
+    {
+        timer = 0.0f;
+        waithingTime = 1.5f;
+        Debug.Log(timer);
+    }
+    private void Update()
+    {
+
     }
 }
