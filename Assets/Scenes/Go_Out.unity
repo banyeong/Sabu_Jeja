@@ -2926,6 +2926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e843bb3a2c0f54bba37923c7f56eba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isGAOpen: 0
   Gaurd_Shop: {fileID: 450529838}
   closeShop: {fileID: 286917912}
   Back: {fileID: 384237448}
@@ -6489,6 +6490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6e1c7629bf16af45912f12d40a68bc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFWOpen: 0
   Flower_Shop: {fileID: 657456126}
   closeShop: {fileID: 114230730}
   Back: {fileID: 384237448}
@@ -6629,11 +6631,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 869675009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 609817ec0fcfa7c4d857a7516e9c2a1d, type: 3}
+  m_Script: {fileID: 11500000, guid: d7ae48ffb2ad5bb4ba33a55c3100259e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  START: {fileID: 0}
   FINISH: {fileID: 509693227}
+  FWShop: {fileID: 847637330}
+  WPShop: {fileID: 1958659445}
+  GAShop: {fileID: 431818631}
+  Restaurant: {fileID: 349069646}
+  Mountain: {fileID: 1965577662}
+  Lake: {fileID: 2119926289}
 --- !u!114 &869675012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8660,11 +8667,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1167482267}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 609817ec0fcfa7c4d857a7516e9c2a1d, type: 3}
+  m_Script: {fileID: 11500000, guid: d7ae48ffb2ad5bb4ba33a55c3100259e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  START: {fileID: 0}
   FINISH: {fileID: 509693227}
+  FWShop: {fileID: 847637330}
+  WPShop: {fileID: 1958659445}
+  GAShop: {fileID: 431818631}
+  Restaurant: {fileID: 349069646}
+  Mountain: {fileID: 1965577662}
+  Lake: {fileID: 2119926289}
 --- !u!1 &1176932438
 GameObject:
   m_ObjectHideFlags: 0
@@ -14565,11 +14577,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1907555059}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 609817ec0fcfa7c4d857a7516e9c2a1d, type: 3}
+  m_Script: {fileID: 11500000, guid: d7ae48ffb2ad5bb4ba33a55c3100259e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  START: {fileID: 0}
   FINISH: {fileID: 509693227}
+  FWShop: {fileID: 847637330}
+  WPShop: {fileID: 1958659445}
+  GAShop: {fileID: 431818631}
+  Restaurant: {fileID: 349069646}
+  Mountain: {fileID: 1965577662}
+  Lake: {fileID: 2119926289}
 --- !u!114 &1907555062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14983,6 +15000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dce33f710f4d1df49a22a32a05d5b1f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isWPOpen: 0
   Weapon_Shop: {fileID: 1115544963}
   closeShop: {fileID: 1093215805}
   Back: {fileID: 384237448}

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class WP_Shop_Open : MonoBehaviour
 {
+    public bool isWPOpen = false;
+
     public GameObject Weapon_Shop;
     public Button closeShop;
     public Button Back;
@@ -56,12 +58,14 @@ public class WP_Shop_Open : MonoBehaviour
     {
         Weapon_Shop.SetActive(isOpen);
         Back.gameObject.SetActive(false);
+        isWPOpen = true;
     }
     public void DeActiveWPShop()
     {
         ActiveWPShop(false);
         ShowCollider();
         Back.gameObject.SetActive(true);
+        isWPOpen = false;
     }
 
     //스타트 및 업데이트 함수

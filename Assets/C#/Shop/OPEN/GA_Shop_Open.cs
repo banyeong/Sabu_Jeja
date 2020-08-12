@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class GA_Shop_Open : MonoBehaviour
 {
+    public bool isGAOpen = false;
+
     public GameObject Gaurd_Shop;
     public Button closeShop;
     public Button Back;
@@ -54,12 +56,14 @@ public class GA_Shop_Open : MonoBehaviour
     {
         Gaurd_Shop.SetActive(isOpen);
         Back.gameObject.SetActive(false);
+        isGAOpen = true;
     }
     public void DeActiveGAShop()
     {
         ActiveGAShop(false);
         ShowCollider();
         Back.gameObject.SetActive(true);
+        isGAOpen = false;
     }
 
     //스타트 및 업데이트 함수

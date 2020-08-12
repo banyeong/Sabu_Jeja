@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class FW_Shop_Open : MonoBehaviour
 {
+    public bool isFWOpen = false;
+
     public GameObject Flower_Shop;
     public Button closeShop;
     public Button Back;
@@ -56,12 +58,14 @@ public class FW_Shop_Open : MonoBehaviour
     {
         Flower_Shop.SetActive(isOpen);
         Back.gameObject.SetActive(false);
+        isFWOpen = true;
     }
     public void DeActiveFWShop()
     {
         ActiveFWShop(false);
         ShowCollider();
         Back.gameObject.SetActive(true);
+        isFWOpen = false;
     }
 
     //스타트 및 업데이트 함수
