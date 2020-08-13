@@ -5,7 +5,17 @@ using System.IO;
 
 public class FileReader
 {
-    public static List<string> Favor1(string path) //호감도 0~99
+    public void ReadFile(string path)
+    {
+
+    }
+
+    static public TextAsset ReadFile(AssetBundle bundle, string name)
+    {
+        return bundle.LoadAsset<TextAsset>(name);
+    }
+
+    public static List<string> Favor(string path)
     {
         List<string> inputs = new List<string>();
 
@@ -22,7 +32,7 @@ public class FileReader
 
         return inputs;
     }
-
+    /*
     public static List<string> Favor2(string path) //호감도 100~299
     {
         List<string> inputs = new List<string>();
@@ -112,4 +122,5 @@ public class FileReader
 
         return inputs;
     }
+    */
 }

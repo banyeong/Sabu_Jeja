@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
-using UnityEditor.U2D.Common;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -70,7 +69,7 @@ public class training : MonoBehaviour
     public bool isClick_Msl = false;
 
     float timer;
-    public float waithingTime;
+    public float waithingTime = 1.5f;
     private void Msl_time()
     {
         if (isClick_Msl == true) //근력 수련 시작 했는가?
@@ -468,16 +467,5 @@ public class training : MonoBehaviour
                 }
             }
         }
-    }
-
-    private void Start()
-    {
-        timer = 0.0f;
-        waithingTime = 1.5f;
-        Debug.Log(timer);
-    }
-    private void Update()
-    {
-
     }
 }
