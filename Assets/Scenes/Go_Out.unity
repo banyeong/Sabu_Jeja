@@ -5713,7 +5713,7 @@ PrefabInstance:
     - target: {fileID: 3736171917479190174, guid: 66f9e49b38031154c9fd2adc10184d5f,
         type: 3}
       propertyPath: Msl_Str
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3736171917479190174, guid: 66f9e49b38031154c9fd2adc10184d5f,
         type: 3}
@@ -5733,7 +5733,7 @@ PrefabInstance:
     - target: {fileID: 3736171917479190174, guid: 66f9e49b38031154c9fd2adc10184d5f,
         type: 3}
       propertyPath: Item_MslStr
-      value: "\uADFC\uB825 + 0"
+      value: "\uADFC\uB825 + 7"
       objectReference: {fileID: 0}
     - target: {fileID: 3736171917479190174, guid: 66f9e49b38031154c9fd2adc10184d5f,
         type: 3}
@@ -7926,7 +7926,7 @@ PrefabInstance:
     - target: {fileID: 3736171917479190174, guid: 66f9e49b38031154c9fd2adc10184d5f,
         type: 3}
       propertyPath: Moral_Str
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3736171917479190174, guid: 66f9e49b38031154c9fd2adc10184d5f,
         type: 3}
@@ -7946,7 +7946,7 @@ PrefabInstance:
     - target: {fileID: 3736171917479190174, guid: 66f9e49b38031154c9fd2adc10184d5f,
         type: 3}
       propertyPath: Item_MoralStr
-      value: "\uB3C4\uB825 + 0"
+      value: "\uB3C4\uB825 + 7"
       objectReference: {fileID: 0}
     - target: {fileID: 3736171917479190174, guid: 66f9e49b38031154c9fd2adc10184d5f,
         type: 3}

@@ -2233,9 +2233,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &329239078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2693,9 +2692,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &367841750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2974,9 +2972,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &384147455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4723,9 +4720,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &630732099
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5381,9 +5377,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 1090032040}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &726649220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6226,9 +6221,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &841386142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6832,9 +6826,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &914243366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7479,9 +7472,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &981494108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8404,9 +8396,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &1256873271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8607,9 +8598,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &1258082262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9095,9 +9085,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &1338596702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10061,9 +10050,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 363277235}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 363277235}
 --- !u!114 &1423857306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11891,9 +11879,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &1728284940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14229,9 +14216,8 @@ MonoBehaviour:
   Finish: {fileID: 146177646}
   Stat: {fileID: 138449984}
   Panel: {fileID: 0}
-  MslStr_Ani: {fileID: 0}
   isClick_Msl: 0
-  waithingTime: 1.5
+  mslstr_Ani: {fileID: 0}
 --- !u!114 &2071612694
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -63,28 +64,10 @@ public class training : MonoBehaviour
         }
     }
     
-    //애니메이터 및 수련
-    Animator animator;
-    public GameObject MslStr_Ani;
-    public bool isClick_Msl = false;
-
-    float timer;
-    public float waithingTime = 1.5f;
-    private void Msl_time()
-    {
-        if (isClick_Msl == true) //근력 수련 시작 했는가?
-        {
-            timer += Time.deltaTime;
-            Debug.Log(timer);
-            if (timer > waithingTime)
-            {
-                MslStr_Ani.gameObject.SetActive(false);
-                TR_Finish();
-                isClick_Msl = false;
-            }
-            timer = 0;
-        }
-    }
+    //수련 클릭이 되었는가?
+    public bool isClick_Msl; //기본값 false
+    //애니메이션
+    public GameObject mslstr_Ani;
 
     #region training                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             #region trainig
     public void MOCLEAR() // 도력정제
@@ -205,8 +188,7 @@ public class training : MonoBehaviour
         }
 
         isClick_Msl = true;
-        MslStr_Ani.gameObject.SetActive(true);
-        Msl_time();
+        TimeCheck();
     }
 
     public void SWORDSMS() // 검술단련
@@ -256,7 +238,6 @@ public class training : MonoBehaviour
 
         TR_Finish();
     }
-
 
     public void BONGMS() // 봉술단련
     {
@@ -467,5 +448,32 @@ public class training : MonoBehaviour
                 }
             }
         }
+    }
+
+    float time;
+    float checkTime;
+    private void Start()
+    {
+        time = 0.0f;
+        checkTime = 1.5f;
+    }
+    private void TimeCheck()
+    {
+        if (isClick_Msl)
+        {
+            mslstr_Ani.gameObject.SetActive(true);
+            Debug.Log("수련중");
+            time += Time.deltaTime;
+            if (time > checkTime)
+            {
+                mslstr_Ani.gameObject.SetActive(false);
+                TR_Finish();
+                isClick_Msl = false;
+            }
+        }
+    }
+    private void Update()
+    {
+        TimeCheck();
     }
 }

@@ -39,12 +39,6 @@ public class GameManager : MonoBehaviour
             isLKOpen = false
         };
     }
-
-    private void Start()
-    {
-
-    }
-
     public void GameSave()
     {
         //주, 능력치 등등...
@@ -75,7 +69,7 @@ public class GameManager : MonoBehaviour
         int Weeks = PlayerPrefs.GetInt("Weeks");
         int CurrentWeeks = PlayerPrefs.GetInt("Current Weeks");
         int MoneyWeeks = PlayerPrefs.GetInt("Money Weeks");
-        int MslStr = PlayerPrefs.GetInt("Curren MslStr");
+        int MslStr = PlayerPrefs.GetInt("Current MslStr");
         int MoralStr = PlayerPrefs.GetInt("Current MoralStr");
         int Wealth = PlayerPrefs.GetInt("Current Wealth");
         int Favorability = PlayerPrefs.GetInt("Current Favorability");
