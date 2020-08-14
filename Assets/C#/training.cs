@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using Packages.Rider.Editor;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
 using UnityEngine.SceneManagement;
@@ -33,25 +34,12 @@ public class training : MonoBehaviour
                             };
 
     // 수련 알림창 요소
-    [SerializeField] private GameObject Big;
+    [SerializeField] static private GameObject Big;
     [SerializeField] private Button Back;
     [SerializeField] private SpriteRenderer Finish;
-    [SerializeField] private Text Stat;
+    [SerializeField] static private Text Stat;
     [SerializeField] private GameObject Panel;
 
-    public void TR_Finish()//수련 완료 했을 때 뜨는 알림창 함수
-    {
-        Big.gameObject.SetActive(true);
-
-        Stat.text = "현재 " + GameManager.Instance.stat.currentweeks + "주" + "\n"+ "근력 " + GameManager.Instance.stat.CurrentMslStr + " / " + "도력 " + GameManager.Instance.stat.CurrentMoralStr + " / " + "재력 "
-                    + GameManager.Instance.stat.CurrentWealth + " / " + "호감도 " + GameManager.Instance.stat.CurrentFavorability;
-    }
-
-    public void TR_HIDE() //완료창 뒤로가기 눌렀을 때 숨겨짐
-    {
-        Big.gameObject.SetActive(false);
-        Panel.gameObject.SetActive(false);
-    }
 
     //골드 점수 환산 함수
     int goal_Gold_Score = 1000; //처음 기준 골드 점수
@@ -65,9 +53,15 @@ public class training : MonoBehaviour
     }
     
     //수련 클릭이 되었는가?
-    public bool isClick_Msl; //기본값 false
+    static public bool isClick_Msl; //기본값 false
+    static public bool isClick_Moral;
+    static public bool isClick_Etc;
+
+    public int plus;
     //애니메이션
     public GameObject mslstr_Ani;
+    public GameObject moral_Ani;
+    public GameObject etc_Ani;
 
     #region training                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             #region trainig
     public void MOCLEAR() // 도력정제
@@ -92,9 +86,11 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 2;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Moral = !isClick_Moral;
+        TimeCheck();
     }
-
+    
     public void MODEVELOP() // 도술개발
     {
         GameManager.Instance.stat.currentweeks += 3;
@@ -116,7 +112,9 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 3;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Moral = !isClick_Moral;
+        TimeCheck();
     }
 
     public void MOPRACTICE() // 도술연마
@@ -140,7 +138,9 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 4;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Moral = !isClick_Moral;
+        TimeCheck();
     }
 
     public void MOCYCLE() // 운기조식
@@ -163,7 +163,9 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 1;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Moral = !isClick_Moral;
+        TimeCheck();
     }
 
     public void PHYPRACTICE() // 체술단련
@@ -187,7 +189,8 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 2;
         }
 
-        isClick_Msl = true;
+        plus += 1;
+        isClick_Msl = !isClick_Msl;
         TimeCheck();
     }
 
@@ -212,9 +215,11 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 3;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Msl = !isClick_Msl;
+        TimeCheck();
     }
-
+    
     public void SPEARSMS() // 창술단련
     {
         GameManager.Instance.stat.currentweeks += 4;
@@ -236,7 +241,9 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 4;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Msl = !isClick_Msl;
+        TimeCheck();
     }
 
     public void BONGMS() // 봉술단련
@@ -259,9 +266,11 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 1;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Msl = !isClick_Msl;
+        TimeCheck();
     }
-
+    
     public void CALCSTUDY() //상술공부
     {
         GameManager.Instance.stat.currentweeks += 4;
@@ -282,7 +291,9 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 4;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Etc = !isClick_Etc;
+        TimeCheck();
     }
 
     public void BOOKREAD() //도서읽기
@@ -305,7 +316,9 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 4;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Etc = !isClick_Etc;
+        TimeCheck();
     }
 
     public void INSTRUMENT() //악기연주
@@ -329,7 +342,9 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 2;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Etc = !isClick_Etc;
+        TimeCheck();
     }
 
     public void POEMWRITE() //시쓰기
@@ -354,7 +369,9 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 1;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Etc = !isClick_Etc;
+        TimeCheck();
     }
 
     public void DRAWING() //그림그리기
@@ -379,9 +396,13 @@ public class training : MonoBehaviour
             GameManager.Instance.stat.LK_Open_weeks += 3;
         }
 
-        TR_Finish();
+        plus += 1;
+        isClick_Etc = !isClick_Etc;
+        TimeCheck();
     }
+    
     #endregion
+   
 
     public void StoryProgress() //3개월 스토리 진행 함수
     {
@@ -450,30 +471,28 @@ public class training : MonoBehaviour
         }
     }
 
+    //시간 경과
     float time;
     float checkTime;
     private void Start()
     {
+        isClick_Msl = false;
         time = 0.0f;
-        checkTime = 1.5f;
+        checkTime = 2.0f;
     }
     private void TimeCheck()
     {
         if (isClick_Msl)
         {
             mslstr_Ani.gameObject.SetActive(true);
-            Debug.Log("수련중");
-            time += Time.deltaTime;
-            if (time > checkTime)
-            {
-                mslstr_Ani.gameObject.SetActive(false);
-                TR_Finish();
-                isClick_Msl = false;
-            }
         }
-    }
-    private void Update()
-    {
-        TimeCheck();
+        if (isClick_Moral)
+        {
+            moral_Ani.gameObject.SetActive(true);
+        }
+        if (isClick_Etc)
+        {
+            etc_Ani.gameObject.SetActive(true);
+        }
     }
 }
