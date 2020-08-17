@@ -11,6 +11,20 @@ public class StudentStat
     public int Story_Score; // 스토리 점수
     public int Gold_Score; // 골드 점수
 
+    //카드를 앨범에 저장하기 위해
+    public string savecard_1;
+    public string savecard_2;
+    public string savecard_3;
+    public string savecard_4;
+    public string savecard_5;
+    public string savecard_6;
+    public string savecard_7;
+    public string savecard_8;
+    public string savecard_9;
+    public string savecard_10;
+    public string savecard_11;
+    public string savecard_12;
+
     //호감도 이벤트 열기 위해
 
     //음식점

@@ -38,12 +38,6 @@ public class Shop : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnClickSlot(Slot slot)
     {
         if(onSlotClick != null)

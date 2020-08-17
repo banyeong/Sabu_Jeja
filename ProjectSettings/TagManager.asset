@@ -11,6 +11,7 @@ TagManager:
   - Mountain
   - Lake
   - Favor
+  - card1
   layers:
   - Default
   - TransparentFX

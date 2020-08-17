@@ -145,8 +145,4 @@ public class Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         POPUP_Text = POP_UP.GetComponentInChildren<Text>();
     }
-    private void Update()
-    {
-
-    }
 }

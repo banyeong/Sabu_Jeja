@@ -98,4 +98,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FavorStory/Lake3.unity
     guid: aa310351ec76cd14c81ea2960fe0ca96
+  - enabled: 1
+    path: Assets/Scenes/End Story/EndCard.unity
+    guid: 0ca04cf9c52ce444e8239520ab058a3c
   m_configObjects: {}

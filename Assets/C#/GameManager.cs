@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; set; }
 
     public StudentStat stat { get; set; }
+    public StudentStat endCard { get; set; }
 
     private void Awake()
     {
@@ -36,7 +37,22 @@ public class GameManager : MonoBehaviour
             MT_Open_weeks = 1,
             isMTOpen = false,
             LK_Open_weeks = 1,
-            isLKOpen = false
+            isLKOpen = false,
+        };
+        endCard = new StudentStat()
+        {
+            savecard_1 = null,
+            savecard_2 = null,
+            savecard_3 = null,
+            savecard_4 = null,
+            savecard_5 = null,
+            savecard_6 = null,
+            savecard_7 = null,
+            savecard_8 = null,
+            savecard_9 = null,
+            savecard_10 = null,
+            savecard_11 = null,
+            savecard_12 = null,
         };
     }
     public void GameSave()
