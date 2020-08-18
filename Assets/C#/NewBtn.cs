@@ -46,9 +46,12 @@ public class NewBtn : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Y_N_Training.istraining == false)
         {
-            ESC();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                ESC();
+            }
         }
     }
 }

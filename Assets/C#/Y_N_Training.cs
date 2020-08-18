@@ -22,17 +22,21 @@ public class Y_N_Training : MonoBehaviour
 
     private int count = 0;
 
+    static public bool istraining = false;
+
     public void showPOPUP()
     {
         Big.gameObject.SetActive(true);
         Panel.gameObject.SetActive(true);
         TRname.text = trname[count].dialogue;
         Explain.text = explain[count].dialogue;
+        istraining = true;
     }
 
     public void hidePOPUP()
     {
         Big.gameObject.SetActive(false);
         Panel.gameObject.SetActive(false);
+        Y_N_Training.istraining = false;
     }
 }

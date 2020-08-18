@@ -404,6 +404,7 @@ public class training : MonoBehaviour
 
     public void StoryProgress() //3개월 스토리 진행 함수
     {
+        Y_N_Training.istraining = false;
         Story curStory = null; //로드할 스토리
 
         if ((GameManager.Instance.stat.currentweeks >= GameManager.Instance.stat.weeks) && (GameManager.Instance.stat.currentweeks < 144)) // 3개월 루프
@@ -433,6 +434,8 @@ public class training : MonoBehaviour
 
         else if (GameManager.Instance.stat.currentweeks >= 144) // 3년이 지났을 때 엔딩
         {
+            Y_N_Training.istraining = false;
+
             int Final_Gold = GameManager.Instance.stat.Gold_Score - GameManager.Instance.stat.Story_Score;
             int Final_Story = GameManager.Instance.stat.Story_Score - GameManager.Instance.stat.Gold_Score;
 
