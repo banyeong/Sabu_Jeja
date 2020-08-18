@@ -35,16 +35,19 @@ public class Lake : MonoBehaviour
     {
         if (isDialogue == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (NewBtn.isESC == false)
             {
-                if (count < dialogue.Length)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    NextDialogue();
-                }
-                else
-                {
-                    SceneManager.LoadScene(15);
-                    GameManager.Instance.stat.CurrentFavorability += 14;
+                    if (count < dialogue.Length)
+                    {
+                        NextDialogue();
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene(15);
+                        GameManager.Instance.stat.CurrentFavorability += 14;
+                    }
                 }
             }
         }

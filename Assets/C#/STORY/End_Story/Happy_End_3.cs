@@ -14,6 +14,8 @@ public class Happy_End_3 : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite_name; //누가 말하는지 표시
     [SerializeField] private SpriteRenderer sprite_background; //배경
 
+    [SerializeField] private GameObject menu;
+
     private bool isDialogue = true;
     private int count = 0;
 
@@ -30,21 +32,41 @@ public class Happy_End_3 : MonoBehaviour
         count++;
     }
 
-    // Update is called once per frame
+    //시간 경과
+    float time;
+    float checkTime;
+    private void Start()
+    {
+        time = 0.0f;
+        checkTime = 1.0f;
+    }
+
     void Update()
     {
         if (isDialogue == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (NewBtn.isESC == false)
             {
-                if (count < dialogue.Length)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    NextDialogue();
+                    if (count < dialogue.Length)
+                    {
+                        NextDialogue();
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene(31);
+                    }
                 }
-                else
+            }
+            else if (menu.activeSelf == true)
+            {
+                time += Time.deltaTime;
+                if (time > checkTime)
                 {
-                    //나중에 바꿔야 함
-                    SceneManager.LoadScene(31);
+                    menu.gameObject.SetActive(false);
+                    NewBtn.isESC = false;
+                    time = 0.0f;
                 }
             }
         }

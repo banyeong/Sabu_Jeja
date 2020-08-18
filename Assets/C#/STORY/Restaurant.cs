@@ -35,16 +35,19 @@ public class Restaurant : MonoBehaviour
     {
         if (isDialogue == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (NewBtn.isESC == false)
             {
-                if (count < dialogue.Length)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    NextDialogue();
-                }
-                else
-                {
-                    GameManager.Instance.stat.CurrentFavorability += 14;
-                    SceneManager.LoadScene(15);
+                    if (count < dialogue.Length)
+                    {
+                        NextDialogue();
+                    }
+                    else
+                    {
+                        GameManager.Instance.stat.CurrentFavorability += 14;
+                        SceneManager.LoadScene(15);
+                    }
                 }
             }
         }
