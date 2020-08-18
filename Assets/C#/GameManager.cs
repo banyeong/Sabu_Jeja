@@ -55,6 +55,9 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("Current Wealth", GameManager.Instance.stat.CurrentWealth);
         PlayerPrefs.SetInt("Current Favorability", GameManager.Instance.stat.CurrentFavorability);
 
+        PlayerPrefs.SetInt("Story score", GameManager.Instance.stat.Story_Score);
+        PlayerPrefs.SetInt("Gold score", GameManager.Instance.stat.Gold_Score);
+
         PlayerPrefs.SetInt("RT_Open_weeks", GameManager.Instance.stat.RT_Open_weeks);
         PlayerPrefs.SetInt("MT_Open_weeks", GameManager.Instance.stat.MT_Open_weeks);
         PlayerPrefs.SetInt("LK_Open_weeks", GameManager.Instance.stat.LK_Open_weeks);
@@ -80,6 +83,9 @@ public class GameManager : MonoBehaviour
         int Wealth = PlayerPrefs.GetInt("Current Wealth");
         int Favorability = PlayerPrefs.GetInt("Current Favorability");
 
+        int storyScore = PlayerPrefs.GetInt("Story score");
+        int goldScore = PlayerPrefs.GetInt("Gold score");
+
         int RT = PlayerPrefs.GetInt("RT_Open_weeks");
         int MT = PlayerPrefs.GetInt("MT_Open_weeks");
         int LK = PlayerPrefs.GetInt("LK_Open_weeks");
@@ -92,6 +98,9 @@ public class GameManager : MonoBehaviour
         GameManager.Instance.stat.CurrentMoralStr = MoralStr;
         GameManager.Instance.stat.CurrentWealth = Wealth;
         GameManager.Instance.stat.CurrentFavorability = Favorability;
+
+        GameManager.Instance.stat.Story_Score = storyScore;
+        GameManager.Instance.stat.Gold_Score = goldScore;
 
         GameManager.Instance.stat.RT_Open_weeks = RT;
         GameManager.Instance.stat.MT_Open_weeks = MT;

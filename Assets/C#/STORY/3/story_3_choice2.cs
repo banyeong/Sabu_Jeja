@@ -50,18 +50,21 @@ public class story_3_choice2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isShow == true)
+        if (NewBtn.isESC == false)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (isShow == true)
             {
-                if (count < dialogue.Length)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    NextDialogue();
-                }
-                else
-                {
-                    GameManager.Instance.stat.Story_Score += 30;
-                    SceneManager.LoadScene(15);
+                    if (count < dialogue.Length)
+                    {
+                        NextDialogue();
+                    }
+                    else
+                    {
+                        GameManager.Instance.stat.Story_Score += 30;
+                        SceneManager.LoadScene(15);
+                    }
                 }
             }
         }

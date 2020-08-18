@@ -52,16 +52,19 @@ public class story_5_choice2 : MonoBehaviour
     {
         if (isShow == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (NewBtn.isESC == false)
             {
-                if (count < dialogue.Length)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    NextDialogue();
-                }
-                else
-                {
-                    GameManager.Instance.stat.Story_Score += 60;
-                    SceneManager.LoadScene(15);
+                    if (count < dialogue.Length)
+                    {
+                        NextDialogue();
+                    }
+                    else
+                    {
+                        GameManager.Instance.stat.Story_Score += 60;
+                        SceneManager.LoadScene(15);
+                    }
                 }
             }
         }

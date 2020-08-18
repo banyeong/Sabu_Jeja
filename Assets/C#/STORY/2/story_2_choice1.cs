@@ -51,15 +51,18 @@ public class story_2_choice1 : MonoBehaviour
     {
         if (isShow == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (NewBtn.isESC == false)
             {
-                if (count < dialogue.Length)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    NextDialogue();
-                }
-                else
-                {
-                    SceneManager.LoadScene(3);
+                    if (count < dialogue.Length)
+                    {
+                        NextDialogue();
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene(3);
+                    }
                 }
             }
         }

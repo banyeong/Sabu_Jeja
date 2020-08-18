@@ -9,6 +9,7 @@ public class NewBtn : MonoBehaviour
     [SerializeField] private GameObject START;
     [SerializeField] private GameObject FINISH;
     [SerializeField] private GameObject ignorePanel; // 버튼 무시 패널
+    static public bool isESC = false;
 
     public void Go() //시작 버튼 눌렀을 때 시작하겠냐는 물음창 띄우기
     {
@@ -26,6 +27,7 @@ public class NewBtn : MonoBehaviour
     {
         FINISH.gameObject.SetActive(true);
         ignorePanel.gameObject.SetActive(true);
+        isESC = true;
     }
     public void ESC_YES() //게임 종료
     {
@@ -39,6 +41,7 @@ public class NewBtn : MonoBehaviour
     {
         FINISH.gameObject.SetActive(false);
         ignorePanel.gameObject.SetActive(false);
+        isESC = false;
     }
 
     private void Update()

@@ -50,15 +50,18 @@ public class story_9_1 : MonoBehaviour
     {
         if (isDialogue == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (NewBtn.isESC == false)
             {
-                if (count < dialogue.Length)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    NextDialogue();
-                }
-                else
-                {
-                    ShowButton();
+                    if (count < dialogue.Length)
+                    {
+                        NextDialogue();
+                    }
+                    else
+                    {
+                        ShowButton();
+                    }
                 }
             }
         }

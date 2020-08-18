@@ -48,17 +48,20 @@ public class story_5 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isDialogue == true)
+        if (NewBtn.isESC == false)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (isDialogue == true)
             {
-                if (count < dialogue.Length)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    NextDialogue();
-                }
-                else
-                {
-                    ShowButton();
+                    if (count < dialogue.Length)
+                    {
+                        NextDialogue();
+                    }
+                    else
+                    {
+                        ShowButton();
+                    }
                 }
             }
         }

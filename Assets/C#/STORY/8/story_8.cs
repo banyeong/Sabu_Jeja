@@ -37,16 +37,19 @@ public class story_8 : MonoBehaviour
     {
         if (isDialogue == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (NewBtn.isESC == false)
             {
-                if (count < dialogue.Length)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    NextDialogue();
-                }
-                else
-                {
-                    GameManager.Instance.stat.Story_Score += 90;
-                    SceneManager.LoadScene(15);
+                    if (count < dialogue.Length)
+                    {
+                        NextDialogue();
+                    }
+                    else
+                    {
+                        GameManager.Instance.stat.Story_Score += 90;
+                        SceneManager.LoadScene(15);
+                    }
                 }
             }
         }
