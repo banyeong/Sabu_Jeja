@@ -59,6 +59,7 @@ public class WP_Shop_Open : MonoBehaviour
         Weapon_Shop.SetActive(isOpen);
         Back.gameObject.SetActive(false);
         isWPOpen = true;
+        GoOut_Finish.openShop = true;
     }
     public void DeActiveWPShop()
     {
@@ -66,6 +67,7 @@ public class WP_Shop_Open : MonoBehaviour
         ShowCollider();
         Back.gameObject.SetActive(true);
         isWPOpen = false;
+        GoOut_Finish.openShop = false;
     }
 
     //스타트 및 업데이트 함수

@@ -39,22 +39,10 @@ public class GameManager : MonoBehaviour
             LK_Open_weeks = 1,
             isLKOpen = false,
         };
-        endCard = new StudentStat()
-        {
-            savecard_1 = null,
-            savecard_2 = null,
-            savecard_3 = null,
-            savecard_4 = null,
-            savecard_5 = null,
-            savecard_6 = null,
-            savecard_7 = null,
-            savecard_8 = null,
-            savecard_9 = null,
-            savecard_10 = null,
-            savecard_11 = null,
-            savecard_12 = null,
-        };
     }
+
+    [SerializeField] GameObject afterLoad;
+    [SerializeField] GameObject ignorePanel;
     public void GameSave()
     {
         //주, 능력치 등등...
@@ -72,6 +60,8 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("LK_Open_weeks", GameManager.Instance.stat.LK_Open_weeks);
 
         PlayerPrefs.Save();
+        afterLoad.gameObject.SetActive(false);
+        ignorePanel.gameObject.SetActive(false);
     }
     public void GameLoad()
     {

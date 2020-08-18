@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GoOut_Finish : MonoBehaviour
 {
@@ -19,6 +20,12 @@ public class GoOut_Finish : MonoBehaviour
     public BoxCollider2D Restaurant;
     public BoxCollider2D Mountain;
     public BoxCollider2D Lake;
+
+    static public bool openShop = false;
+    [SerializeField] private Button ignoreBTN;
+    [SerializeField] private GameObject fwShop;
+    [SerializeField] private GameObject wpShop;
+    [SerializeField] private GameObject gaShop;
 
     public void ShowCollider()
     {
@@ -47,6 +54,7 @@ public class GoOut_Finish : MonoBehaviour
     {
         FINISH.gameObject.SetActive(true);
         HideCollider();
+        ignoreBTN.gameObject.SetActive(false);
     }
     public void ESC_YES() //게임 종료
     {
@@ -61,23 +69,12 @@ public class GoOut_Finish : MonoBehaviour
     {
         FINISH.gameObject.SetActive(false);
         ShowCollider();
+        ignoreBTN.gameObject.SetActive(true);
     }
 
     private void Update()
     {
-        if (FW.isFWOpen == true)
-        {
-            
-        }
-        else if (GA.isGAOpen == true)
-        {
-
-        }
-        else if (WP.isWPOpen == true)
-        {
-
-        }
-        else
+        if (openShop == false)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {

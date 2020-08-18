@@ -59,6 +59,7 @@ public class FW_Shop_Open : MonoBehaviour
         Flower_Shop.SetActive(isOpen);
         Back.gameObject.SetActive(false);
         isFWOpen = true;
+        GoOut_Finish.openShop = true;
     }
     public void DeActiveFWShop()
     {
@@ -66,6 +67,7 @@ public class FW_Shop_Open : MonoBehaviour
         ShowCollider();
         Back.gameObject.SetActive(true);
         isFWOpen = false;
+        GoOut_Finish.openShop = false;
     }
 
     //스타트 및 업데이트 함수

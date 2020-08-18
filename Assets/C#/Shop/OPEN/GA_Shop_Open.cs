@@ -57,6 +57,7 @@ public class GA_Shop_Open : MonoBehaviour
         Gaurd_Shop.SetActive(isOpen);
         Back.gameObject.SetActive(false);
         isGAOpen = true;
+        GoOut_Finish.openShop = true;
     }
     public void DeActiveGAShop()
     {
@@ -64,6 +65,7 @@ public class GA_Shop_Open : MonoBehaviour
         ShowCollider();
         Back.gameObject.SetActive(true);
         isGAOpen = false;
+        GoOut_Finish.openShop = false;
     }
 
     //스타트 및 업데이트 함수
